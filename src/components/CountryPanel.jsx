@@ -32,9 +32,12 @@ export default function CountryPanel({ pais, config, onClose }) {
       {/* Header */}
       <div className={styles.header}>
         <div className={styles.headerInfo}>
-          <span className={styles.flag}>
-            {countryFlag(pais.codigo)}
-          </span>
+          <img
+            className={styles.flag}
+            src={`https://flagcdn.com/48x36/${pais.codigo.toLowerCase()}.png`}
+            alt={pais.nombre}
+            onError={(e) => { e.target.style.display = 'none' }}
+          />
           <div>
             <h2 className={styles.countryName}>{pais.nombre}</h2>
             <p className={styles.subtitle}>
@@ -126,15 +129,4 @@ export default function CountryPanel({ pais, config, onClose }) {
   )
 }
 
-/**
- * Convierte un código alpha-2 a emoji de bandera
- */
-function countryFlag(code) {
-  if (!code || code.length !== 2) return '🌍'
-  return String.fromCodePoint(
-    ...code
-      .toUpperCase()
-      .split('')
-      .map((c) => 0x1f1e0 + c.charCodeAt(0) - 65)
-  )
-}
+
