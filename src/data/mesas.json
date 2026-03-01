@@ -1,473 +1,396 @@
 {
-  "fechaEleccion": "2026-05-31",
+  "fechaEleccion": "2026-05-25",
   "horaApertura": { "hora": 8, "minuto": 0 },
   "horaCierre": { "hora": 16, "minuto": 0 },
   "minutosAvisoApertura": 30,
   "minutosAvisoCierre": 30,
   "paises": [
-    {
-      "codigo": "US",
-      "nombre": "Estados Unidos",
-      "municipios": [
-        {
-          "ciudad": "Nueva York",
-          "timezone": "America/New_York",
-          "lat": 40.7128,
-          "lon": -74.006,
-          "mesas": [
-            { "numero": 1, "puesto": "Consulado General de Colombia", "direccion": "10 E 46th St, New York, NY 10017" },
-            { "numero": 2, "puesto": "Consulado General de Colombia", "direccion": "10 E 46th St, New York, NY 10017" },
-            { "numero": 3, "puesto": "Consulado General de Colombia", "direccion": "10 E 46th St, New York, NY 10017" }
-          ]
-        },
-        {
-          "ciudad": "Miami",
-          "timezone": "America/New_York",
-          "lat": 25.7617,
-          "lon": -80.1918,
-          "mesas": [
-            { "numero": 1, "puesto": "Consulado de Colombia en Miami", "direccion": "280 Aragon Ave, Coral Gables, FL 33134" },
-            { "numero": 2, "puesto": "Consulado de Colombia en Miami", "direccion": "280 Aragon Ave, Coral Gables, FL 33134" }
-          ]
-        },
-        {
-          "ciudad": "Los Ángeles",
-          "timezone": "America/Los_Angeles",
-          "lat": 34.0522,
-          "lon": -118.2437,
-          "mesas": [
-            { "numero": 1, "puesto": "Consulado de Colombia en Los Ángeles", "direccion": "8383 Wilshire Blvd, Suite 420, Beverly Hills, CA 90211" },
-            { "numero": 2, "puesto": "Consulado de Colombia en Los Ángeles", "direccion": "8383 Wilshire Blvd, Suite 420, Beverly Hills, CA 90211" }
-          ]
-        },
-        {
-          "ciudad": "Chicago",
-          "timezone": "America/Chicago",
-          "lat": 41.8781,
-          "lon": -87.6298,
-          "mesas": [
-            { "numero": 1, "puesto": "Consulado de Colombia en Chicago", "direccion": "500 N Michigan Ave, Suite 2040, Chicago, IL 60611" }
-          ]
-        },
-        {
-          "ciudad": "Houston",
-          "timezone": "America/Chicago",
-          "lat": 29.7604,
-          "lon": -95.3698,
-          "mesas": [
-            { "numero": 1, "puesto": "Consulado de Colombia en Houston", "direccion": "3 Riverway, Suite 1800, Houston, TX 77056" }
-          ]
-        },
-        {
-          "ciudad": "Washington D.C.",
-          "timezone": "America/New_York",
-          "lat": 38.9072,
-          "lon": -77.0369,
-          "mesas": [
-            { "numero": 1, "puesto": "Embajada de Colombia", "direccion": "2118 Leroy Place NW, Washington, DC 20008" }
-          ]
-        },
-        {
-          "ciudad": "Boston",
-          "timezone": "America/New_York",
-          "lat": 42.3601,
-          "lon": -71.0589,
-          "mesas": [
-            { "numero": 1, "puesto": "Consulado de Colombia en Boston", "direccion": "535 Boylston St, Suite 901, Boston, MA 02116" }
-          ]
-        }
-      ]
-    },
-    {
-      "codigo": "ES",
-      "nombre": "España",
-      "municipios": [
-        {
-          "ciudad": "Madrid",
-          "timezone": "Europe/Madrid",
-          "lat": 40.4168,
-          "lon": -3.7038,
-          "mesas": [
-            { "numero": 1, "puesto": "Embajada de Colombia en España", "direccion": "C. del General Martínez Campos, 48, 28010 Madrid" },
-            { "numero": 2, "puesto": "Embajada de Colombia en España", "direccion": "C. del General Martínez Campos, 48, 28010 Madrid" },
-            { "numero": 3, "puesto": "Embajada de Colombia en España", "direccion": "C. del General Martínez Campos, 48, 28010 Madrid" },
-            { "numero": 4, "puesto": "Embajada de Colombia en España", "direccion": "C. del General Martínez Campos, 48, 28010 Madrid" }
-          ]
-        },
-        {
-          "ciudad": "Barcelona",
-          "timezone": "Europe/Madrid",
-          "lat": 41.3851,
-          "lon": 2.1734,
-          "mesas": [
-            { "numero": 1, "puesto": "Consulado de Colombia en Barcelona", "direccion": "C. de Provença, 371, 08025 Barcelona" },
-            { "numero": 2, "puesto": "Consulado de Colombia en Barcelona", "direccion": "C. de Provença, 371, 08025 Barcelona" }
-          ]
-        },
-        {
-          "ciudad": "Valencia",
-          "timezone": "Europe/Madrid",
-          "lat": 39.4699,
-          "lon": -0.3763,
-          "mesas": [
-            { "numero": 1, "puesto": "Consulado de Colombia en Valencia", "direccion": "C/ Jorge Juan 76, 46010 Valencia" }
-          ]
-        }
-      ]
-    },
-    {
-      "codigo": "EC",
-      "nombre": "Ecuador",
-      "municipios": [
-        {
-          "ciudad": "Quito",
-          "timezone": "America/Guayaquil",
-          "lat": -0.1807,
-          "lon": -78.4678,
-          "mesas": [
-            { "numero": 1, "puesto": "Embajada de Colombia en Ecuador", "direccion": "Av. Colón E1-133 y Juan León Mera, Quito" },
-            { "numero": 2, "puesto": "Embajada de Colombia en Ecuador", "direccion": "Av. Colón E1-133 y Juan León Mera, Quito" }
-          ]
-        },
-        {
-          "ciudad": "Guayaquil",
-          "timezone": "America/Guayaquil",
-          "lat": -2.1894,
-          "lon": -79.8891,
-          "mesas": [
-            { "numero": 1, "puesto": "Consulado de Colombia en Guayaquil", "direccion": "Av. Francisco de Orellana y Justino Cornejo, Guayaquil" }
-          ]
-        }
-      ]
-    },
-    {
-      "codigo": "VE",
-      "nombre": "Venezuela",
-      "municipios": [
-        {
-          "ciudad": "Caracas",
-          "timezone": "America/Caracas",
-          "lat": 10.4806,
-          "lon": -66.9036,
-          "mesas": [
-            { "numero": 1, "puesto": "Embajada de Colombia en Venezuela", "direccion": "Av. Luis Roche, Altamira, Caracas" },
-            { "numero": 2, "puesto": "Embajada de Colombia en Venezuela", "direccion": "Av. Luis Roche, Altamira, Caracas" }
-          ]
-        }
-      ]
-    },
-    {
-      "codigo": "MX",
-      "nombre": "México",
-      "municipios": [
-        {
-          "ciudad": "Ciudad de México",
-          "timezone": "America/Mexico_City",
-          "lat": 19.4326,
-          "lon": -99.1332,
-          "mesas": [
-            { "numero": 1, "puesto": "Embajada de Colombia en México", "direccion": "Paseo de la Reforma 379, Cuauhtémoc, CDMX" },
-            { "numero": 2, "puesto": "Embajada de Colombia en México", "direccion": "Paseo de la Reforma 379, Cuauhtémoc, CDMX" }
-          ]
-        }
-      ]
-    },
-    {
-      "codigo": "PA",
-      "nombre": "Panamá",
-      "municipios": [
-        {
-          "ciudad": "Ciudad de Panamá",
-          "timezone": "America/Panama",
-          "lat": 8.9936,
-          "lon": -79.5197,
-          "mesas": [
-            { "numero": 1, "puesto": "Embajada de Colombia en Panamá", "direccion": "Punta Paitilla, Edif. Panacorp, Piso 4, Ciudad de Panamá" },
-            { "numero": 2, "puesto": "Embajada de Colombia en Panamá", "direccion": "Punta Paitilla, Edif. Panacorp, Piso 4, Ciudad de Panamá" }
-          ]
-        }
-      ]
-    },
-    {
-      "codigo": "CA",
-      "nombre": "Canadá",
-      "municipios": [
-        {
-          "ciudad": "Toronto",
-          "timezone": "America/Toronto",
-          "lat": 43.6532,
-          "lon": -79.3832,
-          "mesas": [
-            { "numero": 1, "puesto": "Consulado de Colombia en Toronto", "direccion": "2 Bloor St W, Suite 1501, Toronto, ON M4W 3E2" }
-          ]
-        },
-        {
-          "ciudad": "Ottawa",
-          "timezone": "America/Toronto",
-          "lat": 45.4215,
-          "lon": -75.6972,
-          "mesas": [
-            { "numero": 1, "puesto": "Embajada de Colombia en Canadá", "direccion": "360 Albert St, Suite 1002, Ottawa, ON K1R 7X7" }
-          ]
-        }
-      ]
-    },
-    {
-      "codigo": "AR",
-      "nombre": "Argentina",
-      "municipios": [
-        {
-          "ciudad": "Buenos Aires",
-          "timezone": "America/Argentina/Buenos_Aires",
-          "lat": -34.6037,
-          "lon": -58.3816,
-          "mesas": [
-            { "numero": 1, "puesto": "Embajada de Colombia en Argentina", "direccion": "Carlos Pellegrini 1363, Piso 3, Buenos Aires" },
-            { "numero": 2, "puesto": "Embajada de Colombia en Argentina", "direccion": "Carlos Pellegrini 1363, Piso 3, Buenos Aires" }
-          ]
-        }
-      ]
-    },
-    {
-      "codigo": "CL",
-      "nombre": "Chile",
-      "municipios": [
-        {
-          "ciudad": "Santiago",
-          "timezone": "America/Santiago",
-          "lat": -33.4489,
-          "lon": -70.6693,
-          "mesas": [
-            { "numero": 1, "puesto": "Embajada de Colombia en Chile", "direccion": "Isidora Goyenechea 3516, Las Condes, Santiago" },
-            { "numero": 2, "puesto": "Embajada de Colombia en Chile", "direccion": "Isidora Goyenechea 3516, Las Condes, Santiago" }
-          ]
-        }
-      ]
-    },
-    {
-      "codigo": "PE",
-      "nombre": "Perú",
-      "municipios": [
-        {
-          "ciudad": "Lima",
-          "timezone": "America/Lima",
-          "lat": -12.0464,
-          "lon": -77.0428,
-          "mesas": [
-            { "numero": 1, "puesto": "Embajada de Colombia en Perú", "direccion": "Av. Jorge Basadre 1580, San Isidro, Lima" }
-          ]
-        }
-      ]
-    },
-    {
-      "codigo": "GB",
-      "nombre": "Reino Unido",
-      "municipios": [
-        {
-          "ciudad": "Londres",
-          "timezone": "Europe/London",
-          "lat": 51.5074,
-          "lon": -0.1278,
-          "mesas": [
-            { "numero": 1, "puesto": "Embajada de Colombia en el Reino Unido", "direccion": "3 Hans Crescent, London SW1X 0LN" },
-            { "numero": 2, "puesto": "Embajada de Colombia en el Reino Unido", "direccion": "3 Hans Crescent, London SW1X 0LN" }
-          ]
-        }
-      ]
-    },
-    {
-      "codigo": "FR",
-      "nombre": "Francia",
-      "municipios": [
-        {
-          "ciudad": "París",
-          "timezone": "Europe/Paris",
-          "lat": 48.8566,
-          "lon": 2.3522,
-          "mesas": [
-            { "numero": 1, "puesto": "Embajada de Colombia en Francia", "direccion": "22 Rue de l'Élysée, 75008 Paris" }
-          ]
-        }
-      ]
-    },
-    {
-      "codigo": "DE",
-      "nombre": "Alemania",
-      "municipios": [
-        {
-          "ciudad": "Berlín",
-          "timezone": "Europe/Berlin",
-          "lat": 52.52,
-          "lon": 13.405,
-          "mesas": [
-            { "numero": 1, "puesto": "Embajada de Colombia en Alemania", "direccion": "Kurfürstendamm 84, 10709 Berlin" }
-          ]
-        },
-        {
-          "ciudad": "Frankfurt",
-          "timezone": "Europe/Berlin",
-          "lat": 50.1109,
-          "lon": 8.6821,
-          "mesas": [
-            { "numero": 1, "puesto": "Consulado de Colombia en Frankfurt", "direccion": "Bockenheimer Landstr. 51-53, 60325 Frankfurt" }
-          ]
-        }
-      ]
-    },
-    {
-      "codigo": "IT",
-      "nombre": "Italia",
-      "municipios": [
-        {
-          "ciudad": "Roma",
-          "timezone": "Europe/Rome",
-          "lat": 41.9028,
-          "lon": 12.4964,
-          "mesas": [
-            { "numero": 1, "puesto": "Embajada de Colombia en Italia", "direccion": "Via Giuseppe Pisanelli 4, 00196 Roma" },
-            { "numero": 2, "puesto": "Embajada de Colombia en Italia", "direccion": "Via Giuseppe Pisanelli 4, 00196 Roma" }
-          ]
-        },
-        {
-          "ciudad": "Milán",
-          "timezone": "Europe/Rome",
-          "lat": 45.4654,
-          "lon": 9.1895,
-          "mesas": [
-            { "numero": 1, "puesto": "Consulado de Colombia en Milán", "direccion": "Via Copernico 38, 20125 Milano" }
-          ]
-        }
-      ]
-    },
-    {
-      "codigo": "NL",
-      "nombre": "Países Bajos",
-      "municipios": [
-        {
-          "ciudad": "Ámsterdam",
-          "timezone": "Europe/Amsterdam",
-          "lat": 52.3676,
-          "lon": 4.9041,
-          "mesas": [
-            { "numero": 1, "puesto": "Embajada de Colombia en Países Bajos", "direccion": "Groot Hertoginnelaan 14, 2517 EG Den Haag" }
-          ]
-        }
-      ]
-    },
-    {
-      "codigo": "AU",
-      "nombre": "Australia",
-      "municipios": [
-        {
-          "ciudad": "Sídney",
-          "timezone": "Australia/Sydney",
-          "lat": -33.8688,
-          "lon": 151.2093,
-          "mesas": [
-            { "numero": 1, "puesto": "Embajada de Colombia en Australia", "direccion": "Level 13, 60 Marcus Clarke St, Canberra ACT 2601" }
-          ]
-        }
-      ]
-    },
-    {
-      "codigo": "JP",
-      "nombre": "Japón",
-      "municipios": [
-        {
-          "ciudad": "Tokio",
-          "timezone": "Asia/Tokyo",
-          "lat": 35.6762,
-          "lon": 139.6503,
-          "mesas": [
-            { "numero": 1, "puesto": "Embajada de Colombia en Japón", "direccion": "3-10-53 Kami-Osaki, Shinagawa-ku, Tokyo 141-0021" }
-          ]
-        }
-      ]
-    },
-    {
-      "codigo": "AE",
-      "nombre": "Emiratos Árabes Unidos",
-      "municipios": [
-        {
-          "ciudad": "Dubái",
-          "timezone": "Asia/Dubai",
-          "lat": 25.2048,
-          "lon": 55.2708,
-          "mesas": [
-            { "numero": 1, "puesto": "Consulado de Colombia en Dubái", "direccion": "Emaar Square, Bldg 3, Oficina 502, Dubái" }
-          ]
-        }
-      ]
-    },
-    {
-      "codigo": "CR",
-      "nombre": "Costa Rica",
-      "municipios": [
-        {
-          "ciudad": "San José",
-          "timezone": "America/Costa_Rica",
-          "lat": 9.9281,
-          "lon": -84.0907,
-          "mesas": [
-            { "numero": 1, "puesto": "Embajada de Colombia en Costa Rica", "direccion": "Del ICE de La Sabana 300m Norte y 200m Oeste, San José" }
-          ]
-        }
-      ]
-    },
-    {
-      "codigo": "BR",
-      "nombre": "Brasil",
-      "municipios": [
-        {
-          "ciudad": "Brasilia",
-          "timezone": "America/Sao_Paulo",
-          "lat": -15.7801,
-          "lon": -47.9292,
-          "mesas": [
-            { "numero": 1, "puesto": "Embajada de Colombia en Brasil", "direccion": "SES Av. das Nações, Quadra 809, Lote 26, Brasília" },
-            { "numero": 2, "puesto": "Embajada de Colombia en Brasil", "direccion": "SES Av. das Nações, Quadra 809, Lote 26, Brasília" }
-          ]
-        },
-        {
-          "ciudad": "São Paulo",
-          "timezone": "America/Sao_Paulo",
-          "lat": -23.5505,
-          "lon": -46.6333,
-          "mesas": [
-            { "numero": 1, "puesto": "Consulado de Colombia en São Paulo", "direccion": "Rua Haddock Lobo, 1421, Jardim Paulista, São Paulo" }
-          ]
-        }
-      ]
-    },
-    {
-      "codigo": "PT",
-      "nombre": "Portugal",
-      "municipios": [
-        {
-          "ciudad": "Lisboa",
-          "timezone": "Europe/Lisbon",
-          "lat": 38.7169,
-          "lon": -9.1395,
-          "mesas": [
-            { "numero": 1, "puesto": "Embajada de Colombia en Portugal", "direccion": "Rua Sacramento à Lapa, 8, 1249-090 Lisboa" }
-          ]
-        }
-      ]
-    },
-    {
-      "codigo": "CH",
-      "nombre": "Suiza",
-      "municipios": [
-        {
-          "ciudad": "Berna",
-          "timezone": "Europe/Zurich",
-          "lat": 46.948,
-          "lon": 7.4474,
-          "mesas": [
-            { "numero": 1, "puesto": "Embajada de Colombia en Suiza", "direccion": "Dufourstrasse 47, 3005 Bern" }
-          ]
-        }
-      ]
-    }
+    { "codigo": "GH", "nombre": "Ghana", "municipios": [
+      { "ciudad": "Accra Consulado", "timezone": "Africa/Accra", "lat": 5.6126, "lon": -0.1868, "mesas": [{ "numero": 1, "puesto": "Accra Consulado", "direccion": "No25 Sir Arku Korsah Road Airport Residential Area" }] },
+      { "ciudad": "Dakar", "timezone": "Africa/Dakar", "lat": 14.7063, "lon": -17.4748, "mesas": [{ "numero": 1, "puesto": "Dakar", "direccion": "Villa Keur Amira, Rue FN 11, Fann Résidence" }] }
+    ]},
+    { "codigo": "DE", "nombre": "Alemania", "municipios": [
+      { "ciudad": "Berlin Consulado", "timezone": "Europe/Berlin", "lat": 52.5132, "lon": 13.3949, "mesas": [{ "numero": 1, "puesto": "Berlin Consulado", "direccion": "TAUBENSTRABE 23, 10117 BERLIN" }] },
+      { "ciudad": "Hamburgo", "timezone": "Europe/Berlin", "lat": 53.5491, "lon": 9.9919, "mesas": [{ "numero": 1, "puesto": "Hamburgo", "direccion": "Borsenbrucke 2, 20457 Hamburg" }] },
+      { "ciudad": "Bremen", "timezone": "Europe/Berlin", "lat": 53.0834, "lon": 8.8221, "mesas": [{ "numero": 1, "puesto": "Bremen", "direccion": "GoebenstraBe 1, 28209 Bremen" }] },
+      { "ciudad": "Frankfurt Consulado", "timezone": "Europe/Berlin", "lat": 50.1164, "lon": 8.6647, "mesas": [{ "numero": 1, "puesto": "Frankfurt Consulado", "direccion": "BarckhausstraBe 10, 60325 Frankfurt am Main" }] },
+      { "ciudad": "Stuttgart", "timezone": "Europe/Berlin", "lat": 48.7723, "lon": 9.1721, "mesas": [{ "numero": 1, "puesto": "Stuttgart", "direccion": "MarienstraBe 17, 70178 Stuttgart" }] }
+    ]},
+    { "codigo": "DZ", "nombre": "Argelia", "municipios": [
+      { "ciudad": "Argel Consulado", "timezone": "Africa/Algiers", "lat": 36.7428, "lon": 3.0460, "mesas": [{ "numero": 1, "puesto": "Argel Consulado", "direccion": "43 RUE DES FRERES BEN ALI, HYDRA, ALGER" }] }
+    ]},
+    { "codigo": "AZ", "nombre": "Azerbaiyán", "municipios": [
+      { "ciudad": "Baku Consulado", "timezone": "Asia/Baku", "lat": 40.3832, "lon": 49.8713, "mesas": [{ "numero": 1, "puesto": "Baku Consulado", "direccion": "AVENIDAD KHOJALY 37, DEMIRCHI TOWER, PISO 24" }] }
+    ]},
+    { "codigo": "CW", "nombre": "Curazao", "municipios": [
+      { "ciudad": "Willemstad Consulado", "timezone": "America/Curacao", "lat": 12.1106, "lon": -68.9349, "mesas": [{ "numero": 1, "puesto": "Willemstad Consulado", "direccion": "HANSHI SNOA 25, PUNDA" }] }
+    ]},
+    { "codigo": "AR", "nombre": "Argentina", "municipios": [
+      { "ciudad": "Buenos Aires Consulado", "timezone": "America/Argentina/Buenos_Aires", "lat": -34.5949, "lon": -58.3813, "mesas": [{ "numero": 1, "puesto": "Buenos Aires Consulado", "direccion": "Carlos Pellegrini 1135 PB, C. de Buenos Aires" }] },
+      { "ciudad": "Mendoza", "timezone": "America/Argentina/Mendoza", "lat": -32.8954, "lon": -68.8463, "mesas": [{ "numero": 1, "puesto": "Mendoza", "direccion": "Av. Bartolomé Mitre 552, Mendoza" }] },
+      { "ciudad": "Córdoba", "timezone": "America/Argentina/Cordoba", "lat": -31.4166, "lon": -64.1897, "mesas": [{ "numero": 1, "puesto": "Córdoba", "direccion": "Caseros 356, Córdoba Capital" }] }
+    ]},
+    { "codigo": "AW", "nombre": "Aruba", "municipios": [
+      { "ciudad": "Oranjestad Consulado", "timezone": "America/Aruba", "lat": 12.5170, "lon": -70.0353, "mesas": [{ "numero": 1, "puesto": "Oranjestad Consulado", "direccion": "L.G. Smith Boulevard 60, Ed. Marisol, Oranjestad" }] }
+    ]},
+    { "codigo": "AU", "nombre": "Australia", "municipios": [
+      { "ciudad": "Canberra Consulado", "timezone": "Australia/Sydney", "lat": -35.3079, "lon": 149.1358, "mesas": [{ "numero": 1, "puesto": "Canberra Consulado", "direccion": "Level 2/40 Macquarie St, Barton ACT 2600" }] },
+      { "ciudad": "Melbourne", "timezone": "Australia/Melbourne", "lat": -37.8162, "lon": 144.9629, "mesas": [{ "numero": 1, "puesto": "Melbourne", "direccion": "350 Collins St, Melbourne VIC 3000" }] },
+      { "ciudad": "Perth", "timezone": "Australia/Perth", "lat": -31.9505, "lon": 115.8605, "mesas": [{ "numero": 1, "puesto": "Perth", "direccion": "Level 2, 40 Macquarie Street, Barton, Canberra ACT" }] },
+      { "ciudad": "Sydney Consulado", "timezone": "Australia/Sydney", "lat": -33.8360, "lon": 151.2076, "mesas": [{ "numero": 1, "puesto": "Sydney Consulado", "direccion": "Suite 11.03, Level 11/213 Miller St, North Sydney NSW 2060" }] },
+      { "ciudad": "Brisbane", "timezone": "Australia/Brisbane", "lat": -27.4778, "lon": 153.0209, "mesas": [{ "numero": 1, "puesto": "Brisbane", "direccion": "161 Grey Street, South Bank, QLD 4101" }] }
+    ]},
+    { "codigo": "AT", "nombre": "Austria", "municipios": [
+      { "ciudad": "Viena Consulado", "timezone": "Europe/Vienna", "lat": 48.2095, "lon": 16.3565, "mesas": [{ "numero": 1, "puesto": "Viena Consulado", "direccion": "STADIONGASSE 6-8/31, A-1010 VIENNA" }] },
+      { "ciudad": "Praga", "timezone": "Europe/Prague", "lat": 50.0920, "lon": 14.4262, "mesas": [{ "numero": 1, "puesto": "Praga", "direccion": "Jecná 550/1, 120 00 -Praga 2, República Checa" }] },
+      { "ciudad": "Graz", "timezone": "Europe/Vienna", "lat": 47.0898, "lon": 15.4578, "mesas": [{ "numero": 1, "puesto": "Graz", "direccion": "Apothekerweg 7, 8043 Graz" }] }
+    ]},
+    { "codigo": "BE", "nombre": "Bélgica", "municipios": [
+      { "ciudad": "Bruselas Consulado", "timezone": "Europe/Brussels", "lat": 50.8234, "lon": 4.3691, "mesas": [{ "numero": 1, "puesto": "Bruselas Consulado", "direccion": "Av Louise 326 Ed Blue Tower 3er piso 1050 Bruselas" }] },
+      { "ciudad": "Luxemburgo", "timezone": "Europe/Luxembourg", "lat": 49.6072, "lon": 6.1082, "mesas": [{ "numero": 1, "puesto": "Luxemburgo", "direccion": "Agencia RE/MAX FORUM-154 Av du X septembre" }] }
+    ]},
+    { "codigo": "BO", "nombre": "Bolivia", "municipios": [
+      { "ciudad": "La Paz Consulado", "timezone": "America/La_Paz", "lat": -15.6962, "lon": -68.3303, "mesas": [{ "numero": 1, "puesto": "La Paz Consulado", "direccion": "CL ROBERTO PRUDENCIO 797 ENTRE CL 15 Y 16 DE CALAC" }] },
+      { "ciudad": "Santa Cruz de la Sierra", "timezone": "America/La_Paz", "lat": -17.7788, "lon": -63.2161, "mesas": [{ "numero": 1, "puesto": "Santa Cruz de la Sierra", "direccion": "CUARTO ANILLO AV ROCA Y CORONADO Y RADIAL 21" }] }
+    ]},
+    { "codigo": "BR", "nombre": "Brasil", "municipios": [
+      { "ciudad": "Brasilia Consulado", "timezone": "America/Sao_Paulo", "lat": -15.8096, "lon": -47.8785, "mesas": [{ "numero": 1, "puesto": "Brasilia Consulado", "direccion": "Ses Av. Das Nacoes Quadra 803 Lote 10. Brasilia Df" }] },
+      { "ciudad": "Manaos Consulado", "timezone": "America/Manaus", "lat": -3.0940, "lon": -59.9950, "mesas": [{ "numero": 1, "puesto": "Manaos Consulado", "direccion": "Manaos, Amazonas" }] },
+      { "ciudad": "Sao Paulo Consulado", "timezone": "America/Sao_Paulo", "lat": -23.5773, "lon": -46.6730, "mesas": [{ "numero": 1, "puesto": "Sao Paulo Consulado", "direccion": "Avenida Nove de Julho 4939" }] },
+      { "ciudad": "Belo Horizonte", "timezone": "America/Sao_Paulo", "lat": -19.9198, "lon": -43.9409, "mesas": [{ "numero": 1, "puesto": "Belo Horizonte", "direccion": "Belo Horizonte, Minas Gerais" }] },
+      { "ciudad": "Florianopolis", "timezone": "America/Sao_Paulo", "lat": -27.6060, "lon": -48.5465, "mesas": [{ "numero": 1, "puesto": "Florianópolis", "direccion": "Florianópolis, Santa Catarina" }] },
+      { "ciudad": "Porto Alegre", "timezone": "America/Sao_Paulo", "lat": -30.0386, "lon": -51.1541, "mesas": [{ "numero": 1, "puesto": "Porto Alegre", "direccion": "Avenida Sete de Setembro 5402, Andar 16" }] },
+      { "ciudad": "Curitiba", "timezone": "America/Sao_Paulo", "lat": -25.4464, "lon": -49.2901, "mesas": [{ "numero": 1, "puesto": "Curitiba", "direccion": "Avenida Sete de Setembro 5402" }] },
+      { "ciudad": "Foz de Iguazu", "timezone": "America/Sao_Paulo", "lat": -25.5465, "lon": -54.5871, "mesas": [{ "numero": 1, "puesto": "Foz de Iguazú", "direccion": "Foz de Iguaçu, Paraná" }] },
+      { "ciudad": "Tabatinga Consulado", "timezone": "America/Manaus", "lat": -4.2271, "lon": -69.9373, "mesas": [{ "numero": 1, "puesto": "Tabatinga Consulado", "direccion": "RÚA GENERAL SAMPAIO 623 BARRIO SAN FRANCISCO" }] },
+      { "ciudad": "Rio de Janeiro Consulado", "timezone": "America/Sao_Paulo", "lat": -22.9503, "lon": -43.1807, "mesas": [{ "numero": 1, "puesto": "Río de Janeiro Consulado", "direccion": "Praia de Botafogo 228" }] },
+      { "ciudad": "Fortaleza", "timezone": "America/Fortaleza", "lat": -3.7360, "lon": -38.5207, "mesas": [{ "numero": 1, "puesto": "Fortaleza", "direccion": "Rua Kasel 391A Barrio Eng. Luciano Cavalcante" }] },
+      { "ciudad": "Recife", "timezone": "America/Recife", "lat": -8.1063, "lon": -34.8911, "mesas": [{ "numero": 1, "puesto": "Recife", "direccion": "Recife, Pernambuco" }] }
+    ]},
+    { "codigo": "CA", "nombre": "Canadá", "municipios": [
+      { "ciudad": "Calgary Consulado", "timezone": "America/Edmonton", "lat": 51.0390, "lon": -114.0797, "mesas": [{ "numero": 1, "puesto": "Calgary Consulado", "direccion": "803 15 AVE SW T2R 0R9 Calgary" }] },
+      { "ciudad": "Montreal Consulado", "timezone": "America/Toronto", "lat": 45.5210, "lon": -73.5654, "mesas": [{ "numero": 1, "puesto": "Montreal Consulado", "direccion": "1010 Sherbrooke Oeste, Of 920 H3A2R7" }] },
+      { "ciudad": "Ottawa Consulado", "timezone": "America/Toronto", "lat": 45.4181, "lon": -75.7040, "mesas": [{ "numero": 1, "puesto": "Ottawa Consulado", "direccion": "360 Albert St, Suite 1002 Ottawa, Ontario K1R 7X7" }] },
+      { "ciudad": "Toronto Consulado", "timezone": "America/Toronto", "lat": 43.6461, "lon": -79.3844, "mesas": [{ "numero": 1, "puesto": "Toronto Consulado", "direccion": "40 University Av. Suite 604, M5J 1T1" }] },
+      { "ciudad": "London Ontario", "timezone": "America/Toronto", "lat": 42.9850, "lon": -81.2371, "mesas": [{ "numero": 1, "puesto": "London", "direccion": "338 Burwell St., London, ON, N6B 2V9" }] },
+      { "ciudad": "Vancouver Consulado", "timezone": "America/Vancouver", "lat": 49.2854, "lon": -123.1232, "mesas": [{ "numero": 1, "puesto": "Vancouver Consulado", "direccion": "1090 West Georgia Street, Suite 1340, BC V6E 3V7" }] }
+    ]},
+    { "codigo": "KR", "nombre": "Corea del Sur", "municipios": [
+      { "ciudad": "Seúl Consulado", "timezone": "Asia/Seoul", "lat": 37.5735, "lon": 126.9774, "mesas": [{ "numero": 1, "puesto": "Seúl Consulado", "direccion": "P.11, Ed. Kyobo Life Insurance 1 Jong-ro Jongno-gu" }] }
+    ]},
+    { "codigo": "CR", "nombre": "Costa Rica", "municipios": [
+      { "ciudad": "San José Consulado", "timezone": "America/Costa_Rica", "lat": 9.9360, "lon": -84.0584, "mesas": [{ "numero": 1, "puesto": "San José Consulado", "direccion": "San José, Costa Rica" }] }
+    ]},
+    { "codigo": "CU", "nombre": "Cuba", "municipios": [
+      { "ciudad": "La Habana Consulado", "timezone": "America/Havana", "lat": 23.1235, "lon": -82.4168, "mesas": [{ "numero": 1, "puesto": "La Habana Consulado", "direccion": "Cll 14 # 515, Entre 5A Y 7A Av. Miramar, Playa" }] }
+    ]},
+    { "codigo": "CL", "nombre": "Chile", "municipios": [
+      { "ciudad": "Antofagasta Consulado", "timezone": "America/Santiago", "lat": -23.6637, "lon": -70.4015, "mesas": [{ "numero": 1, "puesto": "Antofagasta Consulado", "direccion": "Av Libertador Bernardo O Higgins #1291 Antofagasta" }] },
+      { "ciudad": "Iquique", "timezone": "America/Santiago", "lat": -20.2206, "lon": -70.1376, "mesas": [{ "numero": 1, "puesto": "Iquique", "direccion": "Iquique, Tarapacá" }] },
+      { "ciudad": "Santiago Consulado", "timezone": "America/Santiago", "lat": -33.4202, "lon": -70.6106, "mesas": [{ "numero": 1, "puesto": "Santiago Consulado", "direccion": "Av. Andrés Bello 2221, Loc 103, Santiago De Chile" }] }
+    ]},
+    { "codigo": "CN", "nombre": "China", "municipios": [
+      { "ciudad": "Beijing Consulado", "timezone": "Asia/Shanghai", "lat": 39.9130, "lon": 116.4444, "mesas": [{ "numero": 1, "puesto": "Beijing Consulado", "direccion": "34 Guanghua Rd, Chaoyang, Beijing, China, 100020" }] },
+      { "ciudad": "Guangzhou Consulado", "timezone": "Asia/Shanghai", "lat": 23.1177, "lon": 113.3232, "mesas": [{ "numero": 1, "puesto": "Guangzhou Consulado", "direccion": "5 Zhujiang Xi Lu International Finance Centre Of3612" }] },
+      { "ciudad": "Hong Kong Consulado", "timezone": "Asia/Hong_Kong", "lat": 22.2877, "lon": 114.1525, "mesas": [{ "numero": 1, "puesto": "Hong Kong Consulado", "direccion": "Shun Tak Centre, Unit 1215 12/F, 200 Connaught Rd Central" }] },
+      { "ciudad": "Shanghai Consulado", "timezone": "Asia/Shanghai", "lat": 31.2369, "lon": 121.4375, "mesas": [{ "numero": 1, "puesto": "Shanghai Consulado", "direccion": "Anyuan Rd, 518, Putuo, Shanghai 200060" }] }
+    ]},
+    { "codigo": "DK", "nombre": "Dinamarca", "municipios": [
+      { "ciudad": "Copenhague Consulado", "timezone": "Europe/Copenhagen", "lat": 55.6796, "lon": 12.5849, "mesas": [{ "numero": 1, "puesto": "Copenhague Consulado", "direccion": "Kongens Nytorv 15, 3rd Floor, 1050 Copenhagen K" }] }
+    ]},
+    { "codigo": "EC", "nombre": "Ecuador", "municipios": [
+      { "ciudad": "Quito Consulado", "timezone": "America/Guayaquil", "lat": -0.1832, "lon": -78.4772, "mesas": [{ "numero": 1, "puesto": "Quito Consulado", "direccion": "Catalina Aldaz N 34, Quito 170135" }] },
+      { "ciudad": "Esmeraldas Consulado", "timezone": "America/Guayaquil", "lat": 0.9891, "lon": -79.6587, "mesas": [{ "numero": 1, "puesto": "Esmeraldas Consulado", "direccion": "Calle Barbisotti y E, C.Valdez esquina, Esmeraldas" }] },
+      { "ciudad": "Guayaquil Consulado", "timezone": "America/Guayaquil", "lat": -2.1565, "lon": -79.8911, "mesas": [{ "numero": 1, "puesto": "Guayaquil Consulado", "direccion": "Agora XXI, Av. Juan Tanca Marengo, Guayaquil 090505" }] },
+      { "ciudad": "Cuenca", "timezone": "America/Guayaquil", "lat": -2.8957, "lon": -79.0046, "mesas": [{ "numero": 1, "puesto": "Cuenca", "direccion": "Cuenca, Azuay" }] },
+      { "ciudad": "Manta", "timezone": "America/Guayaquil", "lat": 1.0971, "lon": -79.6550, "mesas": [{ "numero": 1, "puesto": "Manta", "direccion": "Cll 110 S/N Av. Puerto Aero, Puerto plaza del mar" }] },
+      { "ciudad": "Nueva Loja Consulado", "timezone": "America/Guayaquil", "lat": 0.0830, "lon": -76.8807, "mesas": [{ "numero": 1, "puesto": "Nueva Loja Consulado", "direccion": "Avenida Quito y Colombia, Edificio Moncada, 4° piso, Lago Agrio" }] },
+      { "ciudad": "Santo Domingo Tsáchilas Consulado", "timezone": "America/Guayaquil", "lat": -0.2520, "lon": -79.1757, "mesas": [{ "numero": 1, "puesto": "Santo Domingo Tsáchilas Consulado", "direccion": "PRXF+6P3, Santo Domingo, Ecuador" }] },
+      { "ciudad": "Tulcán Consulado", "timezone": "America/Guayaquil", "lat": 0.8114, "lon": -77.7174, "mesas": [{ "numero": 1, "puesto": "Tulcán Consulado", "direccion": "Calle Olmedo y 10 de Agosto, Edificio La Catedral, Mezzanine" }] }
+    ]},
+    { "codigo": "EG", "nombre": "Egipto", "municipios": [
+      { "ciudad": "El Cairo Consulado", "timezone": "Africa/Cairo", "lat": 30.0564, "lon": 31.2216, "mesas": [{ "numero": 1, "puesto": "El Cairo Consulado", "direccion": "6 Gezira St, Omar Al Khayam, Zamalek, Cairo" }] },
+      { "ciudad": "Riad", "timezone": "Asia/Riyadh", "lat": 24.7766, "lon": 46.7123, "mesas": [{ "numero": 1, "puesto": "Riad", "direccion": "Riad, Arabia Saudita" }] }
+    ]},
+    { "codigo": "SV", "nombre": "El Salvador", "municipios": [
+      { "ciudad": "San Salvador Consulado", "timezone": "America/El_Salvador", "lat": 13.6974, "lon": -89.2471, "mesas": [{ "numero": 1, "puesto": "San Salvador Consulado", "direccion": "Colonia Maquilishuat, Cll La Mascota #923B" }] },
+      { "ciudad": "Belmopán", "timezone": "America/Belize", "lat": 17.6114, "lon": -88.6822, "mesas": [{ "numero": 1, "puesto": "Belmopán", "direccion": "#13 Citron St., Belmopan, Belize" }] }
+    ]},
+    { "codigo": "AE", "nombre": "Emiratos Árabes Unidos", "municipios": [
+      { "ciudad": "Abu Dhabi Consulado", "timezone": "Asia/Dubai", "lat": 24.4635, "lon": 54.3426, "mesas": [{ "numero": 1, "puesto": "Abu Dhabi Consulado", "direccion": "AL BATEEN AREA, VILLA 1" }] },
+      { "ciudad": "Doha", "timezone": "Asia/Qatar", "lat": 25.3185, "lon": 51.5269, "mesas": [{ "numero": 1, "puesto": "Doha", "direccion": "Palm Tower B, Al Funduq St, Zone 60, Oficina 3601, Qatar" }] }
+    ]},
+    { "codigo": "ES", "nombre": "España", "municipios": [
+      { "ciudad": "Barcelona Consulado", "timezone": "Europe/Madrid", "lat": 41.3911, "lon": 2.1695, "mesas": [{ "numero": 1, "puesto": "Barcelona Consulado", "direccion": "Seminari Conciliar de Barcelona" }] },
+      { "ciudad": "Zaragoza", "timezone": "Europe/Madrid", "lat": 41.6689, "lon": -0.8890, "mesas": [{ "numero": 1, "puesto": "Zaragoza", "direccion": "World Trade Center Zaragoza WTCZ" }] },
+      { "ciudad": "Tarragona", "timezone": "Europe/Madrid", "lat": 41.1136, "lon": 1.2518, "mesas": [{ "numero": 1, "puesto": "Tarragona", "direccion": "Tarragona, Cataluña" }] },
+      { "ciudad": "Barcelona Girona", "timezone": "Europe/Madrid", "lat": 41.9850, "lon": 2.8121, "mesas": [{ "numero": 1, "puesto": "Barcelona - Girona", "direccion": "Sala de actos Fira de Girona" }] },
+      { "ciudad": "Barcelona Lleida", "timezone": "Europe/Madrid", "lat": 41.6438, "lon": 0.6502, "mesas": [{ "numero": 1, "puesto": "Barcelona - Lleida", "direccion": "Avinguda de Tortosa, 4, 25005 Lleida" }] },
+      { "ciudad": "Bilbao Consulado", "timezone": "Europe/Madrid", "lat": 43.2616, "lon": -2.9298, "mesas": [{ "numero": 1, "puesto": "Bilbao Consulado", "direccion": "Alameda Urquijo 2, planta 6, Bilbao 48008" }] },
+      { "ciudad": "Pamplona", "timezone": "Europe/Madrid", "lat": 42.8050, "lon": -1.6889, "mesas": [{ "numero": 1, "puesto": "Pamplona", "direccion": "Pamplona, Navarra" }] },
+      { "ciudad": "Logroño", "timezone": "Europe/Madrid", "lat": 42.4666, "lon": -2.4394, "mesas": [{ "numero": 1, "puesto": "Logroño", "direccion": "Logroño, La Rioja" }] },
+      { "ciudad": "Oviedo", "timezone": "Europe/Madrid", "lat": 43.3722, "lon": -5.8354, "mesas": [{ "numero": 1, "puesto": "Oviedo - Bilbao", "direccion": "Oviedo, Asturias" }] },
+      { "ciudad": "Madrid Consulado", "timezone": "Europe/Madrid", "lat": 40.4175, "lon": -3.6979, "mesas": [{ "numero": 1, "puesto": "Madrid Consulado", "direccion": "Madrid, España" }] },
+      { "ciudad": "Lugo", "timezone": "Europe/Madrid", "lat": 42.9995, "lon": -7.5426, "mesas": [{ "numero": 1, "puesto": "Lugo", "direccion": "Lugo, Galicia" }] },
+      { "ciudad": "Albacete", "timezone": "Europe/Madrid", "lat": 38.9930, "lon": -1.8520, "mesas": [{ "numero": 1, "puesto": "Albacete", "direccion": "Casa Carretas - Plaza Mateo Villora" }] },
+      { "ciudad": "Valladolid", "timezone": "Europe/Madrid", "lat": 41.6640, "lon": -4.7258, "mesas": [{ "numero": 1, "puesto": "Valladolid", "direccion": "Centro Cívico Rondilla, Calle Alberto Fernández 3" }] },
+      { "ciudad": "Sevilla Consulado", "timezone": "Europe/Madrid", "lat": 37.3696, "lon": -5.9887, "mesas": [{ "numero": 1, "puesto": "Sevilla Consulado", "direccion": "Avenida Paseo de las Delicias s/n C.P 41012" }] },
+      { "ciudad": "Málaga", "timezone": "Europe/Madrid", "lat": 36.9005, "lon": -4.3914, "mesas": [{ "numero": 1, "puesto": "Málaga", "direccion": "Cll Cervantes con Paseo Reding - Plaza de Toros" }] },
+      { "ciudad": "Almería", "timezone": "Europe/Madrid", "lat": 36.8459, "lon": -2.4523, "mesas": [{ "numero": 1, "puesto": "Almería", "direccion": "Pabellón Moisés Ruiz, Carretera de Níjar, 2. 04006" }] },
+      { "ciudad": "Palma de Mallorca Consulado", "timezone": "Europe/Madrid", "lat": 39.5723, "lon": 2.6429, "mesas": [{ "numero": 1, "puesto": "Palma de Mallorca Consulado", "direccion": "Avenida Jaime III 25, 1B 07012 Palma de Mallorca" }] },
+      { "ciudad": "Ibiza", "timezone": "Europe/Madrid", "lat": 38.9009, "lon": 1.4098, "mesas": [{ "numero": 1, "puesto": "Ibiza", "direccion": "Casal d'Entitats de Cas" }] },
+      { "ciudad": "Valencia Consulado", "timezone": "Europe/Madrid", "lat": 39.4756, "lon": -0.3701, "mesas": [{ "numero": 1, "puesto": "Valencia Consulado", "direccion": "C/ Plaza Tetuán 8, plantas 2 y 3, CP 46003" }] },
+      { "ciudad": "Murcia", "timezone": "Europe/Madrid", "lat": 37.9892, "lon": -1.1350, "mesas": [{ "numero": 1, "puesto": "Murcia", "direccion": "Sercotel Amistad Murcia" }] },
+      { "ciudad": "Alicante", "timezone": "Europe/Madrid", "lat": 37.9891, "lon": -1.1350, "mesas": [{ "numero": 1, "puesto": "Alicante", "direccion": "Av de Cataluña, 20, 03540 Alicante" }] },
+      { "ciudad": "Las Palmas de Gran Canaria Consulado", "timezone": "Atlantic/Canary", "lat": 28.1014, "lon": -15.4160, "mesas": [{ "numero": 1, "puesto": "Las Palmas de Gran Canaria Consulado", "direccion": "C/ Escritor Benito Pérez Galdós (esq. Bravo Murillo)" }] },
+      { "ciudad": "Santa Cruz de Tenerife", "timezone": "Atlantic/Canary", "lat": 28.4487, "lon": -16.2990, "mesas": [{ "numero": 1, "puesto": "Santa Cruz de Tenerife", "direccion": "Recinto Ferial Tenerife, Av de la Constitución No12" }] },
+      { "ciudad": "Lanzarote", "timezone": "Atlantic/Canary", "lat": 28.9635, "lon": -13.5477, "mesas": [{ "numero": 1, "puesto": "Lanzarote", "direccion": "Casa de la Juventud - C/ Juan Negrín no. 108" }] }
+    ]},
+    { "codigo": "US", "nombre": "Estados Unidos", "municipios": [
+      { "ciudad": "Atlanta Consulado", "timezone": "America/New_York", "lat": 33.9311, "lon": -84.3522, "mesas": [{ "numero": 1, "puesto": "Atlanta Consulado", "direccion": "1117 Perimeter Center West OF. # 401" }] },
+      { "ciudad": "Atlanta Charlotte", "timezone": "America/New_York", "lat": 35.1317, "lon": -80.8913, "mesas": [{ "numero": 1, "puesto": "Atlanta - Charlotte", "direccion": "9233 Nations Ford Rd, Charlotte, NC 28273" }] },
+      { "ciudad": "Atlanta Greenville", "timezone": "America/New_York", "lat": 34.8138, "lon": -82.4452, "mesas": [{ "numero": 1, "puesto": "Atlanta - Greenville", "direccion": "2730 Anderson Road Greenville, SC 29611" }] },
+      { "ciudad": "Washington Consulado", "timezone": "America/New_York", "lat": 38.9080, "lon": -77.0395, "mesas": [{ "numero": 1, "puesto": "Washington - Consulado", "direccion": "1724 Massachusetts Avenue NW, Piso 2" }] },
+      { "ciudad": "Boston Consulado", "timezone": "America/New_York", "lat": 42.3510, "lon": -71.0715, "mesas": [{ "numero": 1, "puesto": "Boston Consulado", "direccion": "31 Saint James Av, Suite 960, Boston, MA 02116" }] },
+      { "ciudad": "Boston Central Falls", "timezone": "America/New_York", "lat": 41.8859, "lon": -71.4001, "mesas": [{ "numero": 1, "puesto": "Boston - Central Falls", "direccion": "20 Claremont Street Central Falls, RI 02863" }] },
+      { "ciudad": "Chicago Consulado", "timezone": "America/Chicago", "lat": 41.8914, "lon": -87.6247, "mesas": [{ "numero": 1, "puesto": "Chicago Consulado", "direccion": "500 North Michigan Av, Suite 1960 Cód Postal 60611" }] },
+      { "ciudad": "Columbus Ohio", "timezone": "America/New_York", "lat": 40.0885, "lon": -82.9784, "mesas": [{ "numero": 1, "puesto": "Columbus, Ohio", "direccion": "1450 E Dublin Granville Rd, Columbus, OH 43229" }] },
+      { "ciudad": "Kansas City", "timezone": "America/Chicago", "lat": 38.9638, "lon": -94.6053, "mesas": [{ "numero": 1, "puesto": "Kansas City", "direccion": "9100 Ward Pkwy, Kansas City, MO 64114" }] },
+      { "ciudad": "Michigan", "timezone": "America/Detroit", "lat": 42.3096, "lon": -83.1379, "mesas": [{ "numero": 1, "puesto": "Michigan", "direccion": "2301 Woodmere Street, Detroit, Michigan, 48209" }] },
+      { "ciudad": "Missouri", "timezone": "America/Chicago", "lat": 38.5767, "lon": -92.1735, "mesas": [{ "numero": 1, "puesto": "Missouri", "direccion": "Jefferson City, Missouri" }] },
+      { "ciudad": "Minnesota", "timezone": "America/Chicago", "lat": 45.0024, "lon": -93.2769, "mesas": [{ "numero": 1, "puesto": "Minnesota", "direccion": "2225 West River Road North, Minneapolis, MN 55411" }] },
+      { "ciudad": "Houston Consulado", "timezone": "America/Chicago", "lat": 29.7494, "lon": -95.4732, "mesas": [{ "numero": 1, "puesto": "Houston Consulado", "direccion": "5599 San Felipe St Suite 600 Houston Texas 77056" }] },
+      { "ciudad": "Houston Austin", "timezone": "America/Chicago", "lat": 30.2672, "lon": -97.7431, "mesas": [{ "numero": 1, "puesto": "Houston - Austin", "direccion": "Austin, Texas" }] },
+      { "ciudad": "Houston Dallas", "timezone": "America/Chicago", "lat": 32.8318, "lon": -96.8726, "mesas": [{ "numero": 1, "puesto": "Houston - Dallas", "direccion": "8700 N. Stemmons FWY, Suite 101, Dallas" }] },
+      { "ciudad": "Houston Nueva Orleans", "timezone": "America/Chicago", "lat": 30.0072, "lon": -90.2352, "mesas": [{ "numero": 1, "puesto": "Houston - Nueva Orleans", "direccion": "Nueva Orleans, Louisiana" }] },
+      { "ciudad": "Houston Oklahoma City", "timezone": "America/Chicago", "lat": 36.1254, "lon": -95.8342, "mesas": [{ "numero": 1, "puesto": "Houston - Oklahoma City", "direccion": "2720 SOUTH 129TH EAST AVENUE, TULSA" }] },
+      { "ciudad": "Houston San Antonio", "timezone": "America/Chicago", "lat": 29.4241, "lon": -98.4936, "mesas": [{ "numero": 1, "puesto": "Houston - San Antonio", "direccion": "San Antonio, Texas" }] },
+      { "ciudad": "Los Angeles Consulado", "timezone": "America/Los_Angeles", "lat": 34.0651, "lon": -118.3734, "mesas": [{ "numero": 1, "puesto": "Los Angeles Consulado", "direccion": "8383 Wilshire Blvd Suite 930 Beverly Hills CA 90211" }] },
+      { "ciudad": "Los Angeles Albuquerque", "timezone": "America/Denver", "lat": 35.0955, "lon": -106.5769, "mesas": [{ "numero": 1, "puesto": "Los Angeles - Albuquerque", "direccion": "1820 San Pedro Dr. NE, Albuquerque, NM 87110" }] },
+      { "ciudad": "Los Angeles Phoenix", "timezone": "America/Phoenix", "lat": 33.4484, "lon": -112.0740, "mesas": [{ "numero": 1, "puesto": "Los Angeles - Phoenix", "direccion": "5107 N 7th Street, Phoenix, AZ" }] },
+      { "ciudad": "Los Angeles San Diego", "timezone": "America/Los_Angeles", "lat": 32.7290, "lon": -117.1522, "mesas": [{ "numero": 1, "puesto": "Los Angeles - San Diego", "direccion": "2100 Pan American Pl, San Diego, CA 92101" }] },
+      { "ciudad": "Miami Consulado", "timezone": "America/New_York", "lat": 25.7503, "lon": -80.2603, "mesas": [{ "numero": 1, "puesto": "Miami Consulado", "direccion": "280 Aragon Ave, Coral Gables, FL 33134" }] },
+      { "ciudad": "Miami Hialeah", "timezone": "America/New_York", "lat": 25.8577, "lon": -80.2782, "mesas": [{ "numero": 1, "puesto": "Miami - Hialeah", "direccion": "280 Aragon Ave, Coral Gables, FL 33134" }] },
+      { "ciudad": "Miami Kendall", "timezone": "America/New_York", "lat": 25.6647, "lon": -80.3566, "mesas": [{ "numero": 1, "puesto": "Miami - Kendall", "direccion": "Miami-Kendall, Florida" }] },
+      { "ciudad": "Miami Coral Springs", "timezone": "America/New_York", "lat": 26.2760, "lon": -80.2497, "mesas": [{ "numero": 1, "puesto": "Miami - Coral Springs", "direccion": "Hotel La Quinta INN 3701 N. University Drive" }] },
+      { "ciudad": "Miami Sarasota", "timezone": "America/New_York", "lat": 27.3936, "lon": -82.5630, "mesas": [{ "numero": 1, "puesto": "Miami - Sarasota", "direccion": "Hilton Garden Inn Sarasota-Bradenton Airport 8270" }] },
+      { "ciudad": "Miami Weston", "timezone": "America/New_York", "lat": 26.0646, "lon": -80.3577, "mesas": [{ "numero": 1, "puesto": "Miami - Weston", "direccion": "RICK CASE HONDA 15700 Rick Case Honda Way Weston" }] },
+      { "ciudad": "Miami West Palm Beach", "timezone": "America/New_York", "lat": 26.7153, "lon": -80.0534, "mesas": [{ "numero": 1, "puesto": "Miami - West Palm Beach", "direccion": "Joaquin Garcia High School, 4906 Lyons Rd" }] },
+      { "ciudad": "Nueva York Consulado", "timezone": "America/New_York", "lat": 40.7557, "lon": -73.9784, "mesas": [{ "numero": 1, "puesto": "Nueva York Consulado", "direccion": "10 East 46th Street New York, NY, 10017" }] },
+      { "ciudad": "Nueva York Brentwood", "timezone": "America/New_York", "lat": 40.7789, "lon": -73.2443, "mesas": [{ "numero": 1, "puesto": "Nueva York - Brentwood", "direccion": "1795 Brentwood Rd, Brentwood, NY 11717" }] },
+      { "ciudad": "Nueva York Connecticut", "timezone": "America/New_York", "lat": 41.7622, "lon": -72.6740, "mesas": [{ "numero": 1, "puesto": "Nueva York - Connecticut", "direccion": "500 Main St, Hartford, CT 06103" }] },
+      { "ciudad": "Nueva York Port Chester", "timezone": "America/New_York", "lat": 41.0051, "lon": -73.6843, "mesas": [{ "numero": 1, "puesto": "Nueva York - Port Chester", "direccion": "113 Bowman Ave., Port Chester, NY 10573" }] },
+      { "ciudad": "Nueva York Queens", "timezone": "America/New_York", "lat": 40.7591, "lon": -73.8923, "mesas": [{ "numero": 1, "puesto": "Nueva York - Queens", "direccion": "75-07 31 Avenida e. Elmhurst Queens, N.Y. 11370" }] },
+      { "ciudad": "Nueva York White Plains", "timezone": "America/New_York", "lat": 41.0335, "lon": -73.7655, "mesas": [{ "numero": 1, "puesto": "Nueva York - White Plains", "direccion": "255 Main street, White Plains, NY 10601" }] },
+      { "ciudad": "Nueva York Los Hampton", "timezone": "America/New_York", "lat": 40.8792, "lon": -72.5223, "mesas": [{ "numero": 1, "puesto": "Nueva York - Los Hampton", "direccion": "31 E Montauk Hwy, Hampton Bays, NY 11946" }] },
+      { "ciudad": "Newark Consulado", "timezone": "America/New_York", "lat": 40.7426, "lon": -74.1688, "mesas": [{ "numero": 1, "puesto": "Newark Consulado", "direccion": "550 Broad Street 15Th Floor, Newark, NJ 07102" }] },
+      { "ciudad": "Newark Atlantic City", "timezone": "America/New_York", "lat": 39.3621, "lon": -74.4338, "mesas": [{ "numero": 1, "puesto": "Newark - Atlantic City", "direccion": "1713 Arctic Ave, Atlantic City, NJ 08401" }] },
+      { "ciudad": "Newark Dover", "timezone": "America/New_York", "lat": 40.8845, "lon": -74.5578, "mesas": [{ "numero": 1, "puesto": "Newark - Dover", "direccion": "Club Colombia Dover. 11 E Blackwell St, Dover" }] },
+      { "ciudad": "Newark Elizabeth", "timezone": "America/New_York", "lat": 40.6639, "lon": -74.2107, "mesas": [{ "numero": 1, "puesto": "Newark - Elizabeth", "direccion": "Elizabeth, New Jersey" }] },
+      { "ciudad": "Newark Hackensack", "timezone": "America/New_York", "lat": 40.8869, "lon": -74.0407, "mesas": [{ "numero": 1, "puesto": "Newark - Hackensack", "direccion": "Johnson Public Library. 274 Main Street Hackensack" }] },
+      { "ciudad": "Newark Morristown", "timezone": "America/New_York", "lat": 40.7967, "lon": -74.4816, "mesas": [{ "numero": 1, "puesto": "Newark - Morristown", "direccion": "Morristown, New Jersey" }] },
+      { "ciudad": "Newark Paterson", "timezone": "America/New_York", "lat": 40.9058, "lon": -74.1484, "mesas": [{ "numero": 1, "puesto": "Newark - Paterson", "direccion": "Trenton Ave con 21 Av St, Paterson" }] },
+      { "ciudad": "Newark Philadelphia", "timezone": "America/New_York", "lat": 40.0371, "lon": -75.1052, "mesas": [{ "numero": 1, "puesto": "Newark - Philadelphia", "direccion": "5500 Tabor Ave, Philadelphia, PA 19120" }] },
+      { "ciudad": "Newark Trenton", "timezone": "America/New_York", "lat": 40.2205, "lon": -74.7643, "mesas": [{ "numero": 1, "puesto": "Newark - Trenton", "direccion": "Trenton, New Jersey" }] },
+      { "ciudad": "Newark Union City", "timezone": "America/New_York", "lat": 40.7795, "lon": -74.0244, "mesas": [{ "numero": 1, "puesto": "Newark - Union City", "direccion": "Union City, New Jersey" }] },
+      { "ciudad": "Newark Pittsburgh", "timezone": "America/New_York", "lat": 40.4406, "lon": -79.9959, "mesas": [{ "numero": 1, "puesto": "Newark - Pittsburgh", "direccion": "Pittsburgh, Pennsylvania" }] },
+      { "ciudad": "Orlando Consulado", "timezone": "America/New_York", "lat": 28.4587, "lon": -81.3060, "mesas": [{ "numero": 1, "puesto": "Orlando Consulado", "direccion": "5850 TG Lee Boulevard, Citadel Building, Suite 260" }] },
+      { "ciudad": "Orlando Jacksonville", "timezone": "America/New_York", "lat": 30.3322, "lon": -81.6557, "mesas": [{ "numero": 1, "puesto": "Orlando - Jacksonville", "direccion": "Jacksonville, Florida" }] },
+      { "ciudad": "Orlando Tampa", "timezone": "America/New_York", "lat": 27.9617, "lon": -82.4915, "mesas": [{ "numero": 1, "puesto": "Orlando - Tampa", "direccion": "3012 W Cherry St, Tampa, FL 33607" }] },
+      { "ciudad": "San Francisco Consulado", "timezone": "America/Los_Angeles", "lat": 37.7938, "lon": -122.4027, "mesas": [{ "numero": 1, "puesto": "San Francisco Consulado", "direccion": "456 Montgomery Street Suite 400, San Francisco, CA 94104" }] },
+      { "ciudad": "San Francisco Denver", "timezone": "America/Denver", "lat": 39.7425, "lon": -104.8663, "mesas": [{ "numero": 1, "puesto": "San Francisco - Denver", "direccion": "1609 Havana St, Aurora, CO 80010" }] },
+      { "ciudad": "San Francisco Seattle", "timezone": "America/Los_Angeles", "lat": 47.6194, "lon": -122.3483, "mesas": [{ "numero": 1, "puesto": "San Francisco - Seattle", "direccion": "140 4th Ave N, Seattle, WA 98109" }] },
+      { "ciudad": "Salt Lake City", "timezone": "America/Boise", "lat": 43.5875, "lon": -116.5473, "mesas": [{ "numero": 1, "puesto": "Salt Lake City", "direccion": "315 Stampede Dr, Nampa, ID 83687" }] },
+      { "ciudad": "San Francisco Las Vegas", "timezone": "America/Los_Angeles", "lat": 36.1662, "lon": -115.1079, "mesas": [{ "numero": 1, "puesto": "San Francisco - Las Vegas", "direccion": "2900 Stewart Ave, Las Vegas, NV 89101" }] },
+      { "ciudad": "San Francisco Alaska", "timezone": "America/Anchorage", "lat": 61.1854, "lon": -149.9443, "mesas": [{ "numero": 1, "puesto": "San Francisco - Alaska", "direccion": "3900 Wisconsin St, Anchorage, AK 99517" }] },
+      { "ciudad": "Hawaii", "timezone": "Pacific/Honolulu", "lat": 21.2985, "lon": -157.8619, "mesas": [{ "numero": 1, "puesto": "Hawaii", "direccion": "660 Ala Moana Blvd, Honolulu, HI 96813" }] }
+    ]},
+    { "codigo": "PH", "nombre": "Filipinas", "municipios": [
+      { "ciudad": "Manila Consulado", "timezone": "Asia/Manila", "lat": 14.5535, "lon": 121.0525, "mesas": [{ "numero": 1, "puesto": "Manila Consulado", "direccion": "Piso 14 Inoza Tower 40th Street corner 11th Avenue" }] }
+    ]},
+    { "codigo": "FI", "nombre": "Finlandia", "municipios": [
+      { "ciudad": "Helsinki Consulado", "timezone": "Europe/Helsinki", "lat": 60.1656, "lon": 24.9510, "mesas": [{ "numero": 1, "puesto": "Helsinki Consulado", "direccion": "Unioninkatu 18, Piso 2, 00130 Helsinki" }] }
+    ]},
+    { "codigo": "FR", "nombre": "Francia", "municipios": [
+      { "ciudad": "París Consulado", "timezone": "Europe/Paris", "lat": 48.8726, "lon": 2.3045, "mesas": [{ "numero": 1, "puesto": "París Consulado", "direccion": "12 rue de Berri, 75008 Paris" }] },
+      { "ciudad": "París Estrasburgo", "timezone": "Europe/Paris", "lat": 48.5856, "lon": 7.7420, "mesas": [{ "numero": 1, "puesto": "París - Estrasburgo", "direccion": "Estrasburgo, Alsacia" }] },
+      { "ciudad": "París Lyon", "timezone": "Europe/Paris", "lat": 45.7475, "lon": 4.8252, "mesas": [{ "numero": 1, "puesto": "París - Lyon", "direccion": "3 Cours Charlemagne, 69002, Lyon" }] },
+      { "ciudad": "París Montpellier", "timezone": "Europe/Paris", "lat": 43.6194, "lon": 3.9131, "mesas": [{ "numero": 1, "puesto": "París - Montpellier", "direccion": "Montpellier, Occitania" }] },
+      { "ciudad": "Nantes", "timezone": "Europe/Paris", "lat": 47.2131, "lon": -1.5560, "mesas": [{ "numero": 1, "puesto": "Nantes", "direccion": "1 Rue du Guesclin, 44000 Nantes" }] },
+      { "ciudad": "París Toulouse", "timezone": "Europe/Paris", "lat": 43.6169, "lon": 1.4652, "mesas": [{ "numero": 1, "puesto": "París - Toulouse", "direccion": "Newton Offices Jolimont, 12 avenue Yves Brunaud" }] }
+    ]},
+    { "codigo": "GT", "nombre": "Guatemala", "municipios": [
+      { "ciudad": "Guatemala Consulado", "timezone": "America/Guatemala", "lat": 14.5893, "lon": -90.5133, "mesas": [{ "numero": 1, "puesto": "Guatemala Consulado", "direccion": "2da Calle 5-10 Zona 14 Colonia El Campo" }] }
+    ]},
+    { "codigo": "HT", "nombre": "Haití", "municipios": [
+      { "ciudad": "Puerto Príncipe Consulado", "timezone": "America/Port-au-Prince", "lat": 18.5203, "lon": -72.3023, "mesas": [{ "numero": 1, "puesto": "Puerto Príncipe Consulado", "direccion": "Juvenat 4, Petion Ville" }] }
+    ]},
+    { "codigo": "NL", "nombre": "Países Bajos", "municipios": [
+      { "ciudad": "Ámsterdam Consulado", "timezone": "Europe/Amsterdam", "lat": 52.3664, "lon": 4.8886, "mesas": [{ "numero": 1, "puesto": "Ámsterdam Consulado", "direccion": "Herengracht 444 II, Postal Code 1017BZ, Ámsterdam" }] },
+      { "ciudad": "La Haya", "timezone": "Europe/Amsterdam", "lat": 52.0850, "lon": 4.2898, "mesas": [{ "numero": 1, "puesto": "La Haya", "direccion": "Groot Hertoginnelaan 14, 2517 EG, Den Haag" }] }
+    ]},
+    { "codigo": "HN", "nombre": "Honduras", "municipios": [
+      { "ciudad": "Tegucigalpa Consulado", "timezone": "America/Tegucigalpa", "lat": 14.1010, "lon": -87.1828, "mesas": [{ "numero": 1, "puesto": "Tegucigalpa Consulado", "direccion": "Centro Morazán, Boulevard Morazán, Torre 1 Piso 11" }] }
+    ]},
+    { "codigo": "HU", "nombre": "Hungría", "municipios": [
+      { "ciudad": "Budapest Consulado", "timezone": "Europe/Budapest", "lat": 47.5152, "lon": 19.0476, "mesas": [{ "numero": 1, "puesto": "Budapest Consulado", "direccion": "Ujpesti Rakpart 1, Piso 2, puerta 6 1137 Budapest" }] }
+    ]},
+    { "codigo": "IN", "nombre": "India", "municipios": [
+      { "ciudad": "Nueva Delhi Consulado", "timezone": "Asia/Kolkata", "lat": 28.5719, "lon": 77.1576, "mesas": [{ "numero": 1, "puesto": "Nueva Delhi Consulado", "direccion": "F 2/2 Vasant Vihar, New Delhi, 110057" }] }
+    ]},
+    { "codigo": "ID", "nombre": "Indonesia", "municipios": [
+      { "ciudad": "Jakarta Consulado", "timezone": "Asia/Jakarta", "lat": -6.2166, "lon": 106.8165, "mesas": [{ "numero": 1, "puesto": "Jakarta Consulado", "direccion": "Yakarta, Indonesia" }] }
+    ]},
+    { "codigo": "GB", "nombre": "Inglaterra - Reino Unido", "municipios": [
+      { "ciudad": "Londres Consulado", "timezone": "Europe/London", "lat": 51.5204, "lon": -0.1454, "mesas": [{ "numero": 1, "puesto": "Londres Consulado", "direccion": "Londres, Reino Unido" }] },
+      { "ciudad": "Edimburgo", "timezone": "Europe/London", "lat": 55.9531, "lon": -3.1942, "mesas": [{ "numero": 1, "puesto": "Londres - Edimburgo", "direccion": "Edimburgo, Escocia" }] }
+    ]},
+    { "codigo": "IE", "nombre": "Irlanda", "municipios": [
+      { "ciudad": "Dublín Consulado", "timezone": "Europe/Dublin", "lat": 53.3333, "lon": -6.2531, "mesas": [{ "numero": 1, "puesto": "Dublín Consulado", "direccion": "29 Fitzwilliam Place, D02YY38, Dublín" }] }
+    ]},
+    { "codigo": "IL", "nombre": "Israel", "municipios": [
+      { "ciudad": "Tel Aviv Consulado", "timezone": "Asia/Jerusalem", "lat": 32.0852, "lon": 34.8045, "mesas": [{ "numero": 1, "puesto": "Tel Aviv Consulado", "direccion": "Abba Hillel Silver Rd 12, Ramat Gan" }] },
+      { "ciudad": "Ramallah Palestina", "timezone": "Asia/Hebron", "lat": 31.9040, "lon": 35.2019, "mesas": [{ "numero": 1, "puesto": "Ramallah - Palestina", "direccion": "Ramallah and Albireh Chamber of Commerce & Ind" }] }
+    ]},
+    { "codigo": "IT", "nombre": "Italia", "municipios": [
+      { "ciudad": "Milán Consulado", "timezone": "Europe/Rome", "lat": 45.4718, "lon": 9.1834, "mesas": [{ "numero": 1, "puesto": "Milán Consulado", "direccion": "Via Tivoli, 3, 20121 Milano MI" }] },
+      { "ciudad": "Turín", "timezone": "Europe/Rome", "lat": 45.0575, "lon": 7.6523, "mesas": [{ "numero": 1, "puesto": "Turín", "direccion": "Turín, Piamonte" }] },
+      { "ciudad": "Génova", "timezone": "Europe/Rome", "lat": 44.4058, "lon": 8.9402, "mesas": [{ "numero": 1, "puesto": "Génova", "direccion": "Largo G.A Sanguineti 11/6, 16123 (GE)" }] },
+      { "ciudad": "Roma Consulado", "timezone": "Europe/Rome", "lat": 41.9120, "lon": 12.4753, "mesas": [{ "numero": 1, "puesto": "Roma Consulado", "direccion": "Piazzale Flaminio 9 - CAP. 00196 - Roma" }] },
+      { "ciudad": "Malta La Valeta", "timezone": "Europe/Malta", "lat": 35.8817, "lon": 14.4685, "mesas": [{ "numero": 1, "puesto": "Malta - La Valeta", "direccion": "64, Triq Kardinal Xiberras, Malta" }] },
+      { "ciudad": "Limassol Chipre", "timezone": "Asia/Nicosia", "lat": 34.6644, "lon": 33.0161, "mesas": [{ "numero": 1, "puesto": "Limassol - Chipre", "direccion": "109 Omonoias Ave., Flamingo Building, 3rd Floor" }] },
+      { "ciudad": "Atenas Grecia", "timezone": "Europe/Athens", "lat": 37.9838, "lon": 23.7275, "mesas": [{ "numero": 1, "puesto": "Atenas - Grecia", "direccion": "40, Kyprou Str. & Agiou Tryfonos" }] },
+      { "ciudad": "Florencia", "timezone": "Europe/Rome", "lat": 43.7758, "lon": 11.2371, "mesas": [{ "numero": 1, "puesto": "Florencia", "direccion": "Hotel NH Firenze, Piazza Vittorio Veneto" }] },
+      { "ciudad": "Nápoles", "timezone": "Europe/Rome", "lat": 40.8270, "lon": 14.2134, "mesas": [{ "numero": 1, "puesto": "Nápoles", "direccion": "Via Stazio, 5, 80123 Napoli NA" }] }
+    ]},
+    { "codigo": "JM", "nombre": "Jamaica", "municipios": [
+      { "ciudad": "Kingston Consulado", "timezone": "America/Jamaica", "lat": 18.0096, "lon": -76.7867, "mesas": [{ "numero": 1, "puesto": "Kingston Consulado", "direccion": "53 KNUTSFORD BOULEVARD VM BUILDING P.4 KINGSTON 5" }] },
+      { "ciudad": "Islas Caimán", "timezone": "America/Cayman", "lat": 19.2933, "lon": -81.3784, "mesas": [{ "numero": 1, "puesto": "Islas Caimán", "direccion": "Islas Caimán" }] }
+    ]},
+    { "codigo": "JP", "nombre": "Japón", "municipios": [
+      { "ciudad": "Tokio Consulado", "timezone": "Asia/Tokyo", "lat": 35.6322, "lon": 139.7177, "mesas": [{ "numero": 1, "puesto": "Tokio Consulado", "direccion": "3-10-53 Kamiosaki, Shinagawa-Ku Tokio 141-0021" }] },
+      { "ciudad": "Nagoya", "timezone": "Asia/Tokyo", "lat": 35.1562, "lon": 136.8982, "mesas": [{ "numero": 1, "puesto": "Nagoya", "direccion": "Nagoya, Aichi" }] },
+      { "ciudad": "Osaka", "timezone": "Asia/Tokyo", "lat": 34.6728, "lon": 135.4906, "mesas": [{ "numero": 1, "puesto": "Osaka", "direccion": "Osaka, Japón" }] }
+    ]},
+    { "codigo": "KE", "nombre": "Kenia", "municipios": [
+      { "ciudad": "Nairobi Consulado", "timezone": "Africa/Nairobi", "lat": -1.2859, "lon": 36.8236, "mesas": [{ "numero": 1, "puesto": "Nairobi Consulado", "direccion": "Magnolia Close, Off United Nations Av. House 57" }] }
+    ]},
+    { "codigo": "LB", "nombre": "Líbano", "municipios": [
+      { "ciudad": "Beirut Consulado", "timezone": "Asia/Beirut", "lat": 33.9035, "lon": 35.5720, "mesas": [{ "numero": 1, "puesto": "Beirut Consulado", "direccion": "Beirut, Líbano" }] }
+    ]},
+    { "codigo": "MY", "nombre": "Malasia", "municipios": [
+      { "ciudad": "Kuala Lumpur Consulado", "timezone": "Asia/Kuala_Lumpur", "lat": 3.1541, "lon": 101.7120, "mesas": [{ "numero": 1, "puesto": "Kuala Lumpur Consulado", "direccion": "19A-27-3A, Level 27, UOA Centre, 19, Jalan Pinang" }] }
+    ]},
+    { "codigo": "MA", "nombre": "Marruecos", "municipios": [
+      { "ciudad": "Rabat Consulado", "timezone": "Africa/Casablanca", "lat": 33.9540, "lon": -6.8202, "mesas": [{ "numero": 1, "puesto": "Rabat Consulado", "direccion": "66, Rue Beni Arouss et Seghrouchen, Souissi Rabat" }] }
+    ]},
+    { "codigo": "MX", "nombre": "México", "municipios": [
+      { "ciudad": "Ciudad de México Consulado", "timezone": "America/Mexico_City", "lat": 19.4267, "lon": -99.1697, "mesas": [{ "numero": 1, "puesto": "Ciudad de México Consulado", "direccion": "Ciudad de México" }] },
+      { "ciudad": "Cancún Consulado", "timezone": "America/Cancun", "lat": 21.1595, "lon": -86.8215, "mesas": [{ "numero": 1, "puesto": "Cancún Consulado", "direccion": "Av. Bonampak 58 Con Cll Cherná 6 Plaza Vía Piso 4" }] },
+      { "ciudad": "Mérida", "timezone": "America/Merida", "lat": 21.0373, "lon": -89.6343, "mesas": [{ "numero": 1, "puesto": "Mérida", "direccion": "Hotel Residence Inn by Marriott Mérida" }] },
+      { "ciudad": "Villahermosa", "timezone": "America/Mexico_City", "lat": 18.0025, "lon": -92.9569, "mesas": [{ "numero": 1, "puesto": "Villahermosa", "direccion": "Hotel Holiday Inn Express Villahermosa Tabasco2000" }] },
+      { "ciudad": "Monterrey Consulado", "timezone": "America/Monterrey", "lat": 25.6494, "lon": -100.3586, "mesas": [{ "numero": 1, "puesto": "Monterrey Consulado", "direccion": "Monterrey, Nuevo León" }] },
+      { "ciudad": "Guadalajara Consulado", "timezone": "America/Mexico_City", "lat": 20.7128, "lon": -103.4097, "mesas": [{ "numero": 1, "puesto": "Guadalajara Consulado", "direccion": "Guadalajara, Jalisco" }] }
+    ]},
+    { "codigo": "NI", "nombre": "Nicaragua", "municipios": [
+      { "ciudad": "Managua Consulado", "timezone": "America/Managua", "lat": 12.0934, "lon": -86.2395, "mesas": [{ "numero": 1, "puesto": "Managua Consulado", "direccion": "Managua, Nicaragua" }] }
+    ]},
+    { "codigo": "NZ", "nombre": "Nueva Zelanda", "municipios": [
+      { "ciudad": "Auckland Consulado", "timezone": "Pacific/Auckland", "lat": -36.8483, "lon": 174.7652, "mesas": [{ "numero": 1, "puesto": "Auckland Consulado", "direccion": "Level 16, 191 Queen Street, CBD, 1010" }] },
+      { "ciudad": "Wellington", "timezone": "Pacific/Auckland", "lat": -41.2796, "lon": 174.7747, "mesas": [{ "numero": 1, "puesto": "Wellington", "direccion": "Wellington, Nueva Zelanda" }] }
+    ]},
+    { "codigo": "NO", "nombre": "Noruega", "municipios": [
+      { "ciudad": "Oslo Consulado", "timezone": "Europe/Oslo", "lat": 59.9206, "lon": 10.7242, "mesas": [{ "numero": 1, "puesto": "Oslo Consulado", "direccion": "Oscars Gate 34, 0258 Oslo" }] }
+    ]},
+    { "codigo": "PA", "nombre": "Panamá", "municipios": [
+      { "ciudad": "Panamá Consulado", "timezone": "America/Panama", "lat": 8.9742, "lon": -79.5162, "mesas": [{ "numero": 1, "puesto": "Panamá Consulado", "direccion": "Ciudad de Panamá" }] },
+      { "ciudad": "David", "timezone": "America/Panama", "lat": 8.4354, "lon": -82.4399, "mesas": [{ "numero": 1, "puesto": "Panamá - David", "direccion": "David, Chiriquí" }] },
+      { "ciudad": "Colón Consulado", "timezone": "America/Panama", "lat": 9.3393, "lon": -79.8878, "mesas": [{ "numero": 1, "puesto": "Colón Consulado", "direccion": "Plaza Comercial ATLANTIC, Primer Alto Oficina 101" }] },
+      { "ciudad": "Jaqué Consulado", "timezone": "America/Panama", "lat": 7.5249, "lon": -78.1597, "mesas": [{ "numero": 1, "puesto": "Jaqué Consulado", "direccion": "Sec 2, Cll 2da Infoplaza, Diag Iglesia Católica" }] },
+      { "ciudad": "Puerto Obaldía Consulado", "timezone": "America/Panama", "lat": 8.6679, "lon": -77.4200, "mesas": [{ "numero": 1, "puesto": "Puerto Obaldía Consulado", "direccion": "CALLE PRINCIPAL, FRENTE A IGLESIA CATOLICA" }] }
+    ]},
+    { "codigo": "PY", "nombre": "Paraguay", "municipios": [
+      { "ciudad": "Asunción Consulado", "timezone": "America/Asuncion", "lat": -25.2807, "lon": -57.5683, "mesas": [{ "numero": 1, "puesto": "Asunción Consulado", "direccion": "Asunción, Paraguay" }] }
+    ]},
+    { "codigo": "PE", "nombre": "Perú", "municipios": [
+      { "ciudad": "Lima Consulado", "timezone": "America/Lima", "lat": -12.1186, "lon": -77.0327, "mesas": [{ "numero": 1, "puesto": "Lima Consulado", "direccion": "Lima, Perú" }] },
+      { "ciudad": "Iquitos Consulado", "timezone": "America/Lima", "lat": -3.7483, "lon": -73.2480, "mesas": [{ "numero": 1, "puesto": "Iquitos Consulado", "direccion": "CALLE MOORE Nro.249 MAYNAS-IQUITOS" }] }
+    ]},
+    { "codigo": "PL", "nombre": "Polonia", "municipios": [
+      { "ciudad": "Varsovia Consulado", "timezone": "Europe/Warsaw", "lat": 52.2321, "lon": 21.0566, "mesas": [{ "numero": 1, "puesto": "Varsovia Consulado", "direccion": "Ul. Zwyciezców 29, Postal Code 03-936 Varsovia" }] },
+      { "ciudad": "Bucarest", "timezone": "Europe/Bucharest", "lat": 44.4665, "lon": 26.0824, "mesas": [{ "numero": 1, "puesto": "Bucarest", "direccion": "Strada Clucerului 78-80 Piso 1, Sector 1, Rumanía" }] }
+    ]},
+    { "codigo": "PT", "nombre": "Portugal", "municipios": [
+      { "ciudad": "Lisboa Consulado", "timezone": "Europe/Lisbon", "lat": 38.7288, "lon": -9.1470, "mesas": [{ "numero": 1, "puesto": "Lisboa Consulado", "direccion": "Av Fontes Pereira de Melo 16 Palacio Sottomayor 1050" }] },
+      { "ciudad": "Oporto", "timezone": "Europe/Lisbon", "lat": 41.1629, "lon": -8.6590, "mesas": [{ "numero": 1, "puesto": "Oporto", "direccion": "Av. da Boabista 3011, 4100-136" }] }
+    ]},
+    { "codigo": "PR", "nombre": "Puerto Rico", "municipios": [
+      { "ciudad": "San Juan de Puerto Rico Consulado", "timezone": "America/Puerto_Rico", "lat": 18.4322, "lon": -66.0592, "mesas": [{ "numero": 1, "puesto": "San Juan Consulado", "direccion": "2 AV PONCE DE LEON EDIF MERCANTIL PL SAN JUAN PR" }] }
+    ]},
+    { "codigo": "DO", "nombre": "República Dominicana", "municipios": [
+      { "ciudad": "Santo Domingo Consulado", "timezone": "America/Santo_Domingo", "lat": 18.4727, "lon": -69.9352, "mesas": [{ "numero": 1, "puesto": "Santo Domingo Consulado", "direccion": "Cll Andrés Julio Aybar Número 27 Ensanche Piantini" }] }
+    ]},
+    { "codigo": "SG", "nombre": "Singapur", "municipios": [
+      { "ciudad": "Singapur Consulado", "timezone": "Asia/Singapore", "lat": 1.2991, "lon": 103.8592, "mesas": [{ "numero": 1, "puesto": "Singapur Consulado", "direccion": "152 Beach Road 03-04 Gateway East, Singapur 189721" }] }
+    ]},
+    { "codigo": "VN", "nombre": "Vietnam", "municipios": [
+      { "ciudad": "Hanói Consulado", "timezone": "Asia/Ho_Chi_Minh", "lat": 21.0216, "lon": 105.8550, "mesas": [{ "numero": 1, "puesto": "Hanói Consulado", "direccion": "Hanói, Vietnam" }] }
+    ]},
+    { "codigo": "RU", "nombre": "Rusia", "municipios": [
+      { "ciudad": "Moscú Consulado", "timezone": "Europe/Moscow", "lat": 55.7390, "lon": 37.5800, "mesas": [{ "numero": 1, "puesto": "Moscú Consulado", "direccion": "Calle Burdenko 20. Moscú, Federación de Rusia" }] }
+    ]},
+    { "codigo": "ZA", "nombre": "Sudáfrica", "municipios": [
+      { "ciudad": "Pretoria Consulado", "timezone": "Africa/Johannesburg", "lat": -25.7582, "lon": 28.2398, "mesas": [{ "numero": 1, "puesto": "Pretoria Consulado", "direccion": "Pretoria, Sudáfrica" }] },
+      { "ciudad": "Ciudad del Cabo", "timezone": "Africa/Johannesburg", "lat": -33.8254, "lon": 18.4827, "mesas": [{ "numero": 1, "puesto": "Ciudad del Cabo", "direccion": "Ciudad del Cabo, Sudáfrica" }] }
+    ]},
+    { "codigo": "SE", "nombre": "Suecia", "municipios": [
+      { "ciudad": "Estocolmo Consulado", "timezone": "Europe/Stockholm", "lat": 59.3424, "lon": 18.0749, "mesas": [{ "numero": 1, "puesto": "Estocolmo Consulado", "direccion": "Östermalmsgatan 46 3st floor 114 26 Stockholm" }] }
+    ]},
+    { "codigo": "CH", "nombre": "Suiza", "municipios": [
+      { "ciudad": "Berna Consulado", "timezone": "Europe/Zurich", "lat": 46.9452, "lon": 7.4299, "mesas": [{ "numero": 1, "puesto": "Berna Consulado", "direccion": "Zieglerstrasse 29, 3007 - Berna" }] },
+      { "ciudad": "Ginebra", "timezone": "Europe/Zurich", "lat": 46.2241, "lon": 6.1230, "mesas": [{ "numero": 1, "puesto": "Ginebra", "direccion": "Chem. du Champ-d Anier 17, 1209 Genève" }] },
+      { "ciudad": "Lugano", "timezone": "Europe/Zurich", "lat": 45.9893, "lon": 8.9422, "mesas": [{ "numero": 1, "puesto": "Lugano", "direccion": "Vía Carzo 1, 6900 Paradiso" }] },
+      { "ciudad": "Zurich", "timezone": "Europe/Zurich", "lat": 47.3627, "lon": 8.5271, "mesas": [{ "numero": 1, "puesto": "Zurich", "direccion": "Bederstrasse 76 8002, Zurich" }] }
+    ]},
+    { "codigo": "TH", "nombre": "Tailandia", "municipios": [
+      { "ciudad": "Bangkok Consulado", "timezone": "Asia/Bangkok", "lat": 13.7413, "lon": 100.5485, "mesas": [{ "numero": 1, "puesto": "Bangkok Consulado", "direccion": "Bangkok, Tailandia" }] }
+    ]},
+    { "codigo": "TR", "nombre": "Turquía", "municipios": [
+      { "ciudad": "Ankara Consulado", "timezone": "Europe/Istanbul", "lat": 39.8848, "lon": 32.8565, "mesas": [{ "numero": 1, "puesto": "Ankara Consulado", "direccion": "Prof. Dr. Aziz Sancar Sk. No: 4, Çankaya, Ankara" }] },
+      { "ciudad": "Estambul Consulado", "timezone": "Europe/Istanbul", "lat": 41.0957, "lon": 29.0065, "mesas": [{ "numero": 1, "puesto": "Estambul Consulado", "direccion": "Estambul, Turquía" }] }
+    ]},
+    { "codigo": "TT", "nombre": "Trinidad y Tobago", "municipios": [
+      { "ciudad": "Puerto España Consulado", "timezone": "America/Port_of_Spain", "lat": 10.6648, "lon": -61.5191, "mesas": [{ "numero": 1, "puesto": "Puerto España Consulado", "direccion": "30 Maraval Road, Newtown Centre, Port of Spain" }] },
+      { "ciudad": "Bridgetown", "timezone": "America/Barbados", "lat": 13.0811, "lon": -59.6001, "mesas": [{ "numero": 1, "puesto": "Bridgetown", "direccion": "Rosemary, Dayrells Road, Rockley Christ Church, Barbados" }] },
+      { "ciudad": "Georgetown", "timezone": "America/Guyana", "lat": 6.7573, "lon": -58.1818, "mesas": [{ "numero": 1, "puesto": "Georgetown", "direccion": "Macorp, 26 Providence E.B.D., Guyana" }] }
+    ]},
+    { "codigo": "UY", "nombre": "Uruguay", "municipios": [
+      { "ciudad": "Montevideo Consulado", "timezone": "America/Montevideo", "lat": -34.9171, "lon": -56.1549, "mesas": [{ "numero": 1, "puesto": "Montevideo Consulado", "direccion": "Ellauri 746 esquina Juan María Pérez" }] }
+    ]},
+    { "codigo": "VE", "nombre": "Venezuela", "municipios": [
+      { "ciudad": "Caracas Consulado", "timezone": "America/Caracas", "lat": 10.4902, "lon": -66.8689, "mesas": [{ "numero": 1, "puesto": "Caracas Consulado", "direccion": "Caracas, Venezuela" }] },
+      { "ciudad": "Puerto Ordaz Bolívar", "timezone": "America/Caracas", "lat": 8.2592, "lon": -62.7754, "mesas": [{ "numero": 1, "puesto": "Puerto Ordaz - Bolívar", "direccion": "47 C. Humbolt, Ciudad Guayana 8050, Bolívar" }] },
+      { "ciudad": "Valencia Ve", "timezone": "America/Caracas", "lat": 10.1587, "lon": -68.0018, "mesas": [{ "numero": 1, "puesto": "Valencia", "direccion": "Valencia, Carabobo" }] },
+      { "ciudad": "Puerto La Cruz", "timezone": "America/Caracas", "lat": 10.2007, "lon": -64.6346, "mesas": [{ "numero": 1, "puesto": "Puerto La Cruz", "direccion": "Puerto La Cruz, Anzoátegui" }] },
+      { "ciudad": "Puerto Ordaz", "timezone": "America/Caracas", "lat": 8.2883, "lon": -62.7349, "mesas": [{ "numero": 1, "puesto": "Puerto Ordaz", "direccion": "47 C. Humbolt, Ciudad Guayana 8050, Bolívar" }] },
+      { "ciudad": "Maracaibo Consulado", "timezone": "America/Caracas", "lat": 10.6927, "lon": -71.6256, "mesas": [{ "numero": 1, "puesto": "Maracaibo Consulado", "direccion": "Centro Ccial Delicias Norte, Torre Central, Piso 2" }] },
+      { "ciudad": "Barquisimeto", "timezone": "America/Caracas", "lat": 10.0638, "lon": -69.3349, "mesas": [{ "numero": 1, "puesto": "Barquisimeto", "direccion": "Barquisimeto, Lara" }] },
+      { "ciudad": "Maracaibo Machiques", "timezone": "America/Caracas", "lat": 10.0627, "lon": -72.5568, "mesas": [{ "numero": 1, "puesto": "Maracaibo - Machiques", "direccion": "3C7V+27P, Machiques 4021, Zulia" }] },
+      { "ciudad": "San Carlos del Zulia", "timezone": "America/Caracas", "lat": 9.0016, "lon": -71.9221, "mesas": [{ "numero": 1, "puesto": "San Carlos del Zulia", "direccion": "Calle 2 No. 1 - 15 San Carlos del Zulia" }] },
+      { "ciudad": "San Antonio Táchira Consulado", "timezone": "America/Caracas", "lat": 7.8058, "lon": -72.4456, "mesas": [{ "numero": 1, "puesto": "San Antonio del Táchira Consulado", "direccion": "Carrera 20 # 3-40 Sector Miranda" }] },
+      { "ciudad": "Guasdualito", "timezone": "America/Caracas", "lat": 7.2364, "lon": -70.7201, "mesas": [{ "numero": 1, "puesto": "Guasdualito", "direccion": "Guasdualito, Apure" }] },
+      { "ciudad": "Rubio Táchira", "timezone": "America/Caracas", "lat": 7.7039, "lon": -72.3600, "mesas": [{ "numero": 1, "puesto": "San Antonio del Táchira - Rubio", "direccion": "Unidad Educativa Nacional Bolivariana Sucre, Rubio" }] },
+      { "ciudad": "El Amparo Apure", "timezone": "America/Caracas", "lat": 7.1020, "lon": -70.7537, "mesas": [{ "numero": 1, "puesto": "Guasdualito - El Amparo", "direccion": "El Amparo, Apure" }] },
+      { "ciudad": "Barinas", "timezone": "America/Caracas", "lat": 8.6193, "lon": -70.2286, "mesas": [{ "numero": 1, "puesto": "Guasdualito - Barinas", "direccion": "Barinas, Barinas" }] },
+      { "ciudad": "Ezequiel Mora", "timezone": "America/Caracas", "lat": 11.3836, "lon": -69.7001, "mesas": [{ "numero": 1, "puesto": "Guasdualito - Ezequiel Mora", "direccion": "Ezequiel Mora, Venezuela" }] },
+      { "ciudad": "San Fernando de Apure", "timezone": "America/Caracas", "lat": 7.8812, "lon": -67.4715, "mesas": [{ "numero": 1, "puesto": "San Fernando de Apure", "direccion": "C/C Calle Venezuela, casa Ramona Videra" }] },
+      { "ciudad": "San Cristóbal Consulado", "timezone": "America/Caracas", "lat": 7.7708, "lon": -72.2222, "mesas": [{ "numero": 1, "puesto": "San Cristóbal Consulado", "direccion": "San Cristóbal, Táchira" }] },
+      { "ciudad": "Puerto Ayacucho", "timezone": "America/Caracas", "lat": 5.6644, "lon": -67.6241, "mesas": [{ "numero": 1, "puesto": "Puerto Ayacucho", "direccion": "Puerto Ayacucho, Amazonas" }] },
+      { "ciudad": "Fernández Feo", "timezone": "America/Caracas", "lat": 7.7711, "lon": -72.2259, "mesas": [{ "numero": 1, "puesto": "San Cristóbal - Fernández Feo", "direccion": "Fernández Feo, Táchira" }] },
+      { "ciudad": "García de Hevia", "timezone": "America/Caracas", "lat": 8.1978, "lon": -72.2358, "mesas": [{ "numero": 1, "puesto": "San Cristóbal - García de Hevia", "direccion": "García de Hevia, Táchira" }] },
+      { "ciudad": "Jauregui Táchira", "timezone": "America/Caracas", "lat": 7.7839, "lon": -72.2359, "mesas": [{ "numero": 1, "puesto": "San Cristóbal - Jauregui", "direccion": "Jauregui, Táchira" }] },
+      { "ciudad": "San Cristóbal Mérida", "timezone": "America/Caracas", "lat": 7.7685, "lon": -72.2179, "mesas": [{ "numero": 1, "puesto": "San Cristóbal - Mérida", "direccion": "Urb. El Encanto Av#2 Lora Esq. Cll 42 Casa 1 - 82" }] },
+      { "ciudad": "San Fernando de Atabapo", "timezone": "America/Caracas", "lat": 4.0434, "lon": -67.6982, "mesas": [{ "numero": 1, "puesto": "San Fernando de Atabapo", "direccion": "San Fernando de Atabapo, Amazonas" }] }
+    ]}
   ]
 }
