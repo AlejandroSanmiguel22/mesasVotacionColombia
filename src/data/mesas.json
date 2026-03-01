@@ -1,0 +1,473 @@
+{
+  "fechaEleccion": "2026-05-31",
+  "horaApertura": { "hora": 8, "minuto": 0 },
+  "horaCierre": { "hora": 16, "minuto": 0 },
+  "minutosAvisoApertura": 30,
+  "minutosAvisoCierre": 30,
+  "paises": [
+    {
+      "codigo": "US",
+      "nombre": "Estados Unidos",
+      "municipios": [
+        {
+          "ciudad": "Nueva York",
+          "timezone": "America/New_York",
+          "lat": 40.7128,
+          "lon": -74.006,
+          "mesas": [
+            { "numero": 1, "puesto": "Consulado General de Colombia", "direccion": "10 E 46th St, New York, NY 10017" },
+            { "numero": 2, "puesto": "Consulado General de Colombia", "direccion": "10 E 46th St, New York, NY 10017" },
+            { "numero": 3, "puesto": "Consulado General de Colombia", "direccion": "10 E 46th St, New York, NY 10017" }
+          ]
+        },
+        {
+          "ciudad": "Miami",
+          "timezone": "America/New_York",
+          "lat": 25.7617,
+          "lon": -80.1918,
+          "mesas": [
+            { "numero": 1, "puesto": "Consulado de Colombia en Miami", "direccion": "280 Aragon Ave, Coral Gables, FL 33134" },
+            { "numero": 2, "puesto": "Consulado de Colombia en Miami", "direccion": "280 Aragon Ave, Coral Gables, FL 33134" }
+          ]
+        },
+        {
+          "ciudad": "Los Ángeles",
+          "timezone": "America/Los_Angeles",
+          "lat": 34.0522,
+          "lon": -118.2437,
+          "mesas": [
+            { "numero": 1, "puesto": "Consulado de Colombia en Los Ángeles", "direccion": "8383 Wilshire Blvd, Suite 420, Beverly Hills, CA 90211" },
+            { "numero": 2, "puesto": "Consulado de Colombia en Los Ángeles", "direccion": "8383 Wilshire Blvd, Suite 420, Beverly Hills, CA 90211" }
+          ]
+        },
+        {
+          "ciudad": "Chicago",
+          "timezone": "America/Chicago",
+          "lat": 41.8781,
+          "lon": -87.6298,
+          "mesas": [
+            { "numero": 1, "puesto": "Consulado de Colombia en Chicago", "direccion": "500 N Michigan Ave, Suite 2040, Chicago, IL 60611" }
+          ]
+        },
+        {
+          "ciudad": "Houston",
+          "timezone": "America/Chicago",
+          "lat": 29.7604,
+          "lon": -95.3698,
+          "mesas": [
+            { "numero": 1, "puesto": "Consulado de Colombia en Houston", "direccion": "3 Riverway, Suite 1800, Houston, TX 77056" }
+          ]
+        },
+        {
+          "ciudad": "Washington D.C.",
+          "timezone": "America/New_York",
+          "lat": 38.9072,
+          "lon": -77.0369,
+          "mesas": [
+            { "numero": 1, "puesto": "Embajada de Colombia", "direccion": "2118 Leroy Place NW, Washington, DC 20008" }
+          ]
+        },
+        {
+          "ciudad": "Boston",
+          "timezone": "America/New_York",
+          "lat": 42.3601,
+          "lon": -71.0589,
+          "mesas": [
+            { "numero": 1, "puesto": "Consulado de Colombia en Boston", "direccion": "535 Boylston St, Suite 901, Boston, MA 02116" }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "ES",
+      "nombre": "España",
+      "municipios": [
+        {
+          "ciudad": "Madrid",
+          "timezone": "Europe/Madrid",
+          "lat": 40.4168,
+          "lon": -3.7038,
+          "mesas": [
+            { "numero": 1, "puesto": "Embajada de Colombia en España", "direccion": "C. del General Martínez Campos, 48, 28010 Madrid" },
+            { "numero": 2, "puesto": "Embajada de Colombia en España", "direccion": "C. del General Martínez Campos, 48, 28010 Madrid" },
+            { "numero": 3, "puesto": "Embajada de Colombia en España", "direccion": "C. del General Martínez Campos, 48, 28010 Madrid" },
+            { "numero": 4, "puesto": "Embajada de Colombia en España", "direccion": "C. del General Martínez Campos, 48, 28010 Madrid" }
+          ]
+        },
+        {
+          "ciudad": "Barcelona",
+          "timezone": "Europe/Madrid",
+          "lat": 41.3851,
+          "lon": 2.1734,
+          "mesas": [
+            { "numero": 1, "puesto": "Consulado de Colombia en Barcelona", "direccion": "C. de Provença, 371, 08025 Barcelona" },
+            { "numero": 2, "puesto": "Consulado de Colombia en Barcelona", "direccion": "C. de Provença, 371, 08025 Barcelona" }
+          ]
+        },
+        {
+          "ciudad": "Valencia",
+          "timezone": "Europe/Madrid",
+          "lat": 39.4699,
+          "lon": -0.3763,
+          "mesas": [
+            { "numero": 1, "puesto": "Consulado de Colombia en Valencia", "direccion": "C/ Jorge Juan 76, 46010 Valencia" }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "EC",
+      "nombre": "Ecuador",
+      "municipios": [
+        {
+          "ciudad": "Quito",
+          "timezone": "America/Guayaquil",
+          "lat": -0.1807,
+          "lon": -78.4678,
+          "mesas": [
+            { "numero": 1, "puesto": "Embajada de Colombia en Ecuador", "direccion": "Av. Colón E1-133 y Juan León Mera, Quito" },
+            { "numero": 2, "puesto": "Embajada de Colombia en Ecuador", "direccion": "Av. Colón E1-133 y Juan León Mera, Quito" }
+          ]
+        },
+        {
+          "ciudad": "Guayaquil",
+          "timezone": "America/Guayaquil",
+          "lat": -2.1894,
+          "lon": -79.8891,
+          "mesas": [
+            { "numero": 1, "puesto": "Consulado de Colombia en Guayaquil", "direccion": "Av. Francisco de Orellana y Justino Cornejo, Guayaquil" }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "VE",
+      "nombre": "Venezuela",
+      "municipios": [
+        {
+          "ciudad": "Caracas",
+          "timezone": "America/Caracas",
+          "lat": 10.4806,
+          "lon": -66.9036,
+          "mesas": [
+            { "numero": 1, "puesto": "Embajada de Colombia en Venezuela", "direccion": "Av. Luis Roche, Altamira, Caracas" },
+            { "numero": 2, "puesto": "Embajada de Colombia en Venezuela", "direccion": "Av. Luis Roche, Altamira, Caracas" }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "MX",
+      "nombre": "México",
+      "municipios": [
+        {
+          "ciudad": "Ciudad de México",
+          "timezone": "America/Mexico_City",
+          "lat": 19.4326,
+          "lon": -99.1332,
+          "mesas": [
+            { "numero": 1, "puesto": "Embajada de Colombia en México", "direccion": "Paseo de la Reforma 379, Cuauhtémoc, CDMX" },
+            { "numero": 2, "puesto": "Embajada de Colombia en México", "direccion": "Paseo de la Reforma 379, Cuauhtémoc, CDMX" }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "PA",
+      "nombre": "Panamá",
+      "municipios": [
+        {
+          "ciudad": "Ciudad de Panamá",
+          "timezone": "America/Panama",
+          "lat": 8.9936,
+          "lon": -79.5197,
+          "mesas": [
+            { "numero": 1, "puesto": "Embajada de Colombia en Panamá", "direccion": "Punta Paitilla, Edif. Panacorp, Piso 4, Ciudad de Panamá" },
+            { "numero": 2, "puesto": "Embajada de Colombia en Panamá", "direccion": "Punta Paitilla, Edif. Panacorp, Piso 4, Ciudad de Panamá" }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "CA",
+      "nombre": "Canadá",
+      "municipios": [
+        {
+          "ciudad": "Toronto",
+          "timezone": "America/Toronto",
+          "lat": 43.6532,
+          "lon": -79.3832,
+          "mesas": [
+            { "numero": 1, "puesto": "Consulado de Colombia en Toronto", "direccion": "2 Bloor St W, Suite 1501, Toronto, ON M4W 3E2" }
+          ]
+        },
+        {
+          "ciudad": "Ottawa",
+          "timezone": "America/Toronto",
+          "lat": 45.4215,
+          "lon": -75.6972,
+          "mesas": [
+            { "numero": 1, "puesto": "Embajada de Colombia en Canadá", "direccion": "360 Albert St, Suite 1002, Ottawa, ON K1R 7X7" }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "AR",
+      "nombre": "Argentina",
+      "municipios": [
+        {
+          "ciudad": "Buenos Aires",
+          "timezone": "America/Argentina/Buenos_Aires",
+          "lat": -34.6037,
+          "lon": -58.3816,
+          "mesas": [
+            { "numero": 1, "puesto": "Embajada de Colombia en Argentina", "direccion": "Carlos Pellegrini 1363, Piso 3, Buenos Aires" },
+            { "numero": 2, "puesto": "Embajada de Colombia en Argentina", "direccion": "Carlos Pellegrini 1363, Piso 3, Buenos Aires" }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "CL",
+      "nombre": "Chile",
+      "municipios": [
+        {
+          "ciudad": "Santiago",
+          "timezone": "America/Santiago",
+          "lat": -33.4489,
+          "lon": -70.6693,
+          "mesas": [
+            { "numero": 1, "puesto": "Embajada de Colombia en Chile", "direccion": "Isidora Goyenechea 3516, Las Condes, Santiago" },
+            { "numero": 2, "puesto": "Embajada de Colombia en Chile", "direccion": "Isidora Goyenechea 3516, Las Condes, Santiago" }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "PE",
+      "nombre": "Perú",
+      "municipios": [
+        {
+          "ciudad": "Lima",
+          "timezone": "America/Lima",
+          "lat": -12.0464,
+          "lon": -77.0428,
+          "mesas": [
+            { "numero": 1, "puesto": "Embajada de Colombia en Perú", "direccion": "Av. Jorge Basadre 1580, San Isidro, Lima" }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "GB",
+      "nombre": "Reino Unido",
+      "municipios": [
+        {
+          "ciudad": "Londres",
+          "timezone": "Europe/London",
+          "lat": 51.5074,
+          "lon": -0.1278,
+          "mesas": [
+            { "numero": 1, "puesto": "Embajada de Colombia en el Reino Unido", "direccion": "3 Hans Crescent, London SW1X 0LN" },
+            { "numero": 2, "puesto": "Embajada de Colombia en el Reino Unido", "direccion": "3 Hans Crescent, London SW1X 0LN" }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "FR",
+      "nombre": "Francia",
+      "municipios": [
+        {
+          "ciudad": "París",
+          "timezone": "Europe/Paris",
+          "lat": 48.8566,
+          "lon": 2.3522,
+          "mesas": [
+            { "numero": 1, "puesto": "Embajada de Colombia en Francia", "direccion": "22 Rue de l'Élysée, 75008 Paris" }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "DE",
+      "nombre": "Alemania",
+      "municipios": [
+        {
+          "ciudad": "Berlín",
+          "timezone": "Europe/Berlin",
+          "lat": 52.52,
+          "lon": 13.405,
+          "mesas": [
+            { "numero": 1, "puesto": "Embajada de Colombia en Alemania", "direccion": "Kurfürstendamm 84, 10709 Berlin" }
+          ]
+        },
+        {
+          "ciudad": "Frankfurt",
+          "timezone": "Europe/Berlin",
+          "lat": 50.1109,
+          "lon": 8.6821,
+          "mesas": [
+            { "numero": 1, "puesto": "Consulado de Colombia en Frankfurt", "direccion": "Bockenheimer Landstr. 51-53, 60325 Frankfurt" }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "IT",
+      "nombre": "Italia",
+      "municipios": [
+        {
+          "ciudad": "Roma",
+          "timezone": "Europe/Rome",
+          "lat": 41.9028,
+          "lon": 12.4964,
+          "mesas": [
+            { "numero": 1, "puesto": "Embajada de Colombia en Italia", "direccion": "Via Giuseppe Pisanelli 4, 00196 Roma" },
+            { "numero": 2, "puesto": "Embajada de Colombia en Italia", "direccion": "Via Giuseppe Pisanelli 4, 00196 Roma" }
+          ]
+        },
+        {
+          "ciudad": "Milán",
+          "timezone": "Europe/Rome",
+          "lat": 45.4654,
+          "lon": 9.1895,
+          "mesas": [
+            { "numero": 1, "puesto": "Consulado de Colombia en Milán", "direccion": "Via Copernico 38, 20125 Milano" }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "NL",
+      "nombre": "Países Bajos",
+      "municipios": [
+        {
+          "ciudad": "Ámsterdam",
+          "timezone": "Europe/Amsterdam",
+          "lat": 52.3676,
+          "lon": 4.9041,
+          "mesas": [
+            { "numero": 1, "puesto": "Embajada de Colombia en Países Bajos", "direccion": "Groot Hertoginnelaan 14, 2517 EG Den Haag" }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "AU",
+      "nombre": "Australia",
+      "municipios": [
+        {
+          "ciudad": "Sídney",
+          "timezone": "Australia/Sydney",
+          "lat": -33.8688,
+          "lon": 151.2093,
+          "mesas": [
+            { "numero": 1, "puesto": "Embajada de Colombia en Australia", "direccion": "Level 13, 60 Marcus Clarke St, Canberra ACT 2601" }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "JP",
+      "nombre": "Japón",
+      "municipios": [
+        {
+          "ciudad": "Tokio",
+          "timezone": "Asia/Tokyo",
+          "lat": 35.6762,
+          "lon": 139.6503,
+          "mesas": [
+            { "numero": 1, "puesto": "Embajada de Colombia en Japón", "direccion": "3-10-53 Kami-Osaki, Shinagawa-ku, Tokyo 141-0021" }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "AE",
+      "nombre": "Emiratos Árabes Unidos",
+      "municipios": [
+        {
+          "ciudad": "Dubái",
+          "timezone": "Asia/Dubai",
+          "lat": 25.2048,
+          "lon": 55.2708,
+          "mesas": [
+            { "numero": 1, "puesto": "Consulado de Colombia en Dubái", "direccion": "Emaar Square, Bldg 3, Oficina 502, Dubái" }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "CR",
+      "nombre": "Costa Rica",
+      "municipios": [
+        {
+          "ciudad": "San José",
+          "timezone": "America/Costa_Rica",
+          "lat": 9.9281,
+          "lon": -84.0907,
+          "mesas": [
+            { "numero": 1, "puesto": "Embajada de Colombia en Costa Rica", "direccion": "Del ICE de La Sabana 300m Norte y 200m Oeste, San José" }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "BR",
+      "nombre": "Brasil",
+      "municipios": [
+        {
+          "ciudad": "Brasilia",
+          "timezone": "America/Sao_Paulo",
+          "lat": -15.7801,
+          "lon": -47.9292,
+          "mesas": [
+            { "numero": 1, "puesto": "Embajada de Colombia en Brasil", "direccion": "SES Av. das Nações, Quadra 809, Lote 26, Brasília" },
+            { "numero": 2, "puesto": "Embajada de Colombia en Brasil", "direccion": "SES Av. das Nações, Quadra 809, Lote 26, Brasília" }
+          ]
+        },
+        {
+          "ciudad": "São Paulo",
+          "timezone": "America/Sao_Paulo",
+          "lat": -23.5505,
+          "lon": -46.6333,
+          "mesas": [
+            { "numero": 1, "puesto": "Consulado de Colombia en São Paulo", "direccion": "Rua Haddock Lobo, 1421, Jardim Paulista, São Paulo" }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "PT",
+      "nombre": "Portugal",
+      "municipios": [
+        {
+          "ciudad": "Lisboa",
+          "timezone": "Europe/Lisbon",
+          "lat": 38.7169,
+          "lon": -9.1395,
+          "mesas": [
+            { "numero": 1, "puesto": "Embajada de Colombia en Portugal", "direccion": "Rua Sacramento à Lapa, 8, 1249-090 Lisboa" }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "CH",
+      "nombre": "Suiza",
+      "municipios": [
+        {
+          "ciudad": "Berna",
+          "timezone": "Europe/Zurich",
+          "lat": 46.948,
+          "lon": 7.4474,
+          "mesas": [
+            { "numero": 1, "puesto": "Embajada de Colombia en Suiza", "direccion": "Dufourstrasse 47, 3005 Bern" }
+          ]
+        }
+      ]
+    }
+  ]
+}
