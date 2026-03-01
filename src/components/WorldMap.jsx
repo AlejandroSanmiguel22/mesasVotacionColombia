@@ -35,7 +35,7 @@ const WorldMap = memo(({ paises, config, selectedCountry, onSelectCountry }) => 
 
   const handleGeographyClick = useCallback(
     (geo) => {
-      const numericId = String(geo.id)
+      const numericId = String(parseInt(geo.id, 10))
       const alpha2 = COUNTRY_MAP[numericId]
       if (alpha2 && paisMap[alpha2]) {
         onSelectCountry(paisMap[alpha2])
@@ -46,13 +46,13 @@ const WorldMap = memo(({ paises, config, selectedCountry, onSelectCountry }) => 
   )
 
   const isGeographyActive = (geo) => {
-    const numericId = String(geo.id)
+    const numericId = String(parseInt(geo.id, 10))
     const alpha2 = COUNTRY_MAP[numericId]
     return alpha2 && !!paisMap[alpha2]
   }
 
   const getGeographyStatus = (geo) => {
-    const numericId = String(geo.id)
+    const numericId = String(parseInt(geo.id, 10))
     const alpha2 = COUNTRY_MAP[numericId]
     if (alpha2 && paisMap[alpha2]) {
       return getCountryStatus(paisMap[alpha2], config)
@@ -81,7 +81,7 @@ const WorldMap = memo(({ paises, config, selectedCountry, onSelectCountry }) => 
                   const statusCfg = status ? STATUS_CONFIG[status] : null
                   const isSelected =
                     selectedCountry &&
-                    COUNTRY_MAP[String(geo.id)] === selectedCountry.codigo
+                    COUNTRY_MAP[String(parseInt(geo.id, 10))] === selectedCountry.codigo
 
                   return (
                     <Geography
@@ -89,7 +89,7 @@ const WorldMap = memo(({ paises, config, selectedCountry, onSelectCountry }) => 
                       geography={geo}
                       onClick={() => handleGeographyClick(geo)}
                       onMouseEnter={() => {
-                        const numericId = String(geo.id)
+                        const numericId = String(parseInt(geo.id, 10))
                         const alpha2 = COUNTRY_MAP[numericId]
                         if (alpha2 && paisMap[alpha2]) {
                           setTooltip(paisMap[alpha2].nombre)
@@ -98,27 +98,19 @@ const WorldMap = memo(({ paises, config, selectedCountry, onSelectCountry }) => 
                       onMouseLeave={() => setTooltip(null)}
                       style={{
                         default: {
-                          fill: isSelected
-                            ? statusCfg?.color || '#4B5563'
-                            : active
-                            ? statusCfg?.color + '60' || '#374151'
-                            : '#1F2937',
-                          stroke: isSelected
-                            ? statusCfg?.color || '#6B7280'
-                            : active
-                            ? statusCfg?.color + 'AA' || '#374151'
-                            : '#374151',
-                          strokeWidth: isSelected ? 1.5 : active ? 0.8 : 0.3,
+                          fill: active ? statusCfg?.color || '#4B5563' : '#1F2937',
+                          fillOpacity: isSelected ? 0.9 : active ? 0.55 : 1,
+                          stroke: active ? statusCfg?.color || '#374151' : '#374151',
+                          strokeWidth: isSelected ? 1.5 : active ? 1 : 0.3,
                           outline: 'none',
-                          transition: 'fill 0.2s ease',
+                          transition: 'fill 0.2s ease, fill-opacity 0.2s ease',
                           cursor: active ? 'pointer' : 'default',
                         },
                         hover: {
-                          fill: active
-                            ? statusCfg?.color || '#6B7280'
-                            : '#2D3748',
+                          fill: active ? statusCfg?.color || '#6B7280' : '#2D3748',
+                          fillOpacity: active ? 0.8 : 1,
                           stroke: active ? statusCfg?.color || '#6B7280' : '#4B5563',
-                          strokeWidth: active ? 1 : 0.3,
+                          strokeWidth: active ? 1.2 : 0.3,
                           outline: 'none',
                           cursor: active ? 'pointer' : 'default',
                         },

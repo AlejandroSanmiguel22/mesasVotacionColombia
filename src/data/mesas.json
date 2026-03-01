@@ -6,8 +6,7 @@
   "minutosAvisoCierre": 30,
   "paises": [
     { "codigo": "GH", "nombre": "Ghana", "municipios": [
-      { "ciudad": "Accra Consulado", "timezone": "Africa/Accra", "lat": 5.6126, "lon": -0.1868, "mesas": [{ "numero": 1, "puesto": "Accra Consulado", "direccion": "No25 Sir Arku Korsah Road Airport Residential Area" }] },
-      { "ciudad": "Dakar", "timezone": "Africa/Dakar", "lat": 14.7063, "lon": -17.4748, "mesas": [{ "numero": 1, "puesto": "Dakar", "direccion": "Villa Keur Amira, Rue FN 11, Fann Résidence" }] }
+      { "ciudad": "Accra Consulado", "timezone": "Africa/Accra", "lat": 5.6126, "lon": -0.1868, "mesas": [{ "numero": 1, "puesto": "Accra Consulado", "direccion": "No25 Sir Arku Korsah Road Airport Residential Area" }] }
     ]},
     { "codigo": "DE", "nombre": "Alemania", "municipios": [
       { "ciudad": "Berlin Consulado", "timezone": "Europe/Berlin", "lat": 52.5132, "lon": 13.3949, "mesas": [{ "numero": 1, "puesto": "Berlin Consulado", "direccion": "TAUBENSTRABE 23, 10117 BERLIN" }] },
@@ -109,8 +108,7 @@
       { "ciudad": "Tulcán Consulado", "timezone": "America/Guayaquil", "lat": 0.8114, "lon": -77.7174, "mesas": [{ "numero": 1, "puesto": "Tulcán Consulado", "direccion": "Calle Olmedo y 10 de Agosto, Edificio La Catedral, Mezzanine" }] }
     ]},
     { "codigo": "EG", "nombre": "Egipto", "municipios": [
-      { "ciudad": "El Cairo Consulado", "timezone": "Africa/Cairo", "lat": 30.0564, "lon": 31.2216, "mesas": [{ "numero": 1, "puesto": "El Cairo Consulado", "direccion": "6 Gezira St, Omar Al Khayam, Zamalek, Cairo" }] },
-      { "ciudad": "Riad", "timezone": "Asia/Riyadh", "lat": 24.7766, "lon": 46.7123, "mesas": [{ "numero": 1, "puesto": "Riad", "direccion": "Riad, Arabia Saudita" }] }
+      { "ciudad": "El Cairo Consulado", "timezone": "Africa/Cairo", "lat": 30.0564, "lon": 31.2216, "mesas": [{ "numero": 1, "puesto": "El Cairo Consulado", "direccion": "6 Gezira St, Omar Al Khayam, Zamalek, Cairo" }] }
     ]},
     { "codigo": "SV", "nombre": "El Salvador", "municipios": [
       { "ciudad": "San Salvador Consulado", "timezone": "America/El_Salvador", "lat": 13.6974, "lon": -89.2471, "mesas": [{ "numero": 1, "puesto": "San Salvador Consulado", "direccion": "Colonia Maquilishuat, Cll La Mascota #923B" }] },
@@ -259,7 +257,6 @@
       { "ciudad": "Roma Consulado", "timezone": "Europe/Rome", "lat": 41.9120, "lon": 12.4753, "mesas": [{ "numero": 1, "puesto": "Roma Consulado", "direccion": "Piazzale Flaminio 9 - CAP. 00196 - Roma" }] },
       { "ciudad": "Malta La Valeta", "timezone": "Europe/Malta", "lat": 35.8817, "lon": 14.4685, "mesas": [{ "numero": 1, "puesto": "Malta - La Valeta", "direccion": "64, Triq Kardinal Xiberras, Malta" }] },
       { "ciudad": "Limassol Chipre", "timezone": "Asia/Nicosia", "lat": 34.6644, "lon": 33.0161, "mesas": [{ "numero": 1, "puesto": "Limassol - Chipre", "direccion": "109 Omonoias Ave., Flamingo Building, 3rd Floor" }] },
-      { "ciudad": "Atenas Grecia", "timezone": "Europe/Athens", "lat": 37.9838, "lon": 23.7275, "mesas": [{ "numero": 1, "puesto": "Atenas - Grecia", "direccion": "40, Kyprou Str. & Agiou Tryfonos" }] },
       { "ciudad": "Florencia", "timezone": "Europe/Rome", "lat": 43.7758, "lon": 11.2371, "mesas": [{ "numero": 1, "puesto": "Florencia", "direccion": "Hotel NH Firenze, Piazza Vittorio Veneto" }] },
       { "ciudad": "Nápoles", "timezone": "Europe/Rome", "lat": 40.8270, "lon": 14.2134, "mesas": [{ "numero": 1, "puesto": "Nápoles", "direccion": "Via Stazio, 5, 80123 Napoli NA" }] }
     ]},
@@ -317,8 +314,7 @@
       { "ciudad": "Iquitos Consulado", "timezone": "America/Lima", "lat": -3.7483, "lon": -73.2480, "mesas": [{ "numero": 1, "puesto": "Iquitos Consulado", "direccion": "CALLE MOORE Nro.249 MAYNAS-IQUITOS" }] }
     ]},
     { "codigo": "PL", "nombre": "Polonia", "municipios": [
-      { "ciudad": "Varsovia Consulado", "timezone": "Europe/Warsaw", "lat": 52.2321, "lon": 21.0566, "mesas": [{ "numero": 1, "puesto": "Varsovia Consulado", "direccion": "Ul. Zwyciezców 29, Postal Code 03-936 Varsovia" }] },
-      { "ciudad": "Bucarest", "timezone": "Europe/Bucharest", "lat": 44.4665, "lon": 26.0824, "mesas": [{ "numero": 1, "puesto": "Bucarest", "direccion": "Strada Clucerului 78-80 Piso 1, Sector 1, Rumanía" }] }
+      { "ciudad": "Varsovia Consulado", "timezone": "Europe/Warsaw", "lat": 52.2321, "lon": 21.0566, "mesas": [{ "numero": 1, "puesto": "Varsovia Consulado", "direccion": "Ul. Zwyciezców 29, Postal Code 03-936 Varsovia" }] }
     ]},
     { "codigo": "PT", "nombre": "Portugal", "municipios": [
       { "ciudad": "Lisboa Consulado", "timezone": "Europe/Lisbon", "lat": 38.7288, "lon": -9.1470, "mesas": [{ "numero": 1, "puesto": "Lisboa Consulado", "direccion": "Av Fontes Pereira de Melo 16 Palacio Sottomayor 1050" }] },
@@ -391,6 +387,18 @@
       { "ciudad": "Jauregui Táchira", "timezone": "America/Caracas", "lat": 7.7839, "lon": -72.2359, "mesas": [{ "numero": 1, "puesto": "San Cristóbal - Jauregui", "direccion": "Jauregui, Táchira" }] },
       { "ciudad": "San Cristóbal Mérida", "timezone": "America/Caracas", "lat": 7.7685, "lon": -72.2179, "mesas": [{ "numero": 1, "puesto": "San Cristóbal - Mérida", "direccion": "Urb. El Encanto Av#2 Lora Esq. Cll 42 Casa 1 - 82" }] },
       { "ciudad": "San Fernando de Atabapo", "timezone": "America/Caracas", "lat": 4.0434, "lon": -67.6982, "mesas": [{ "numero": 1, "puesto": "San Fernando de Atabapo", "direccion": "San Fernando de Atabapo, Amazonas" }] }
+    ]},
+    { "codigo": "SN", "nombre": "Senegal", "municipios": [
+      { "ciudad": "Dakar", "timezone": "Africa/Dakar", "lat": 14.7063, "lon": -17.4748, "mesas": [{ "numero": 1, "puesto": "Dakar", "direccion": "Villa Keur Amira, Rue FN 11, Fann Résidence" }] }
+    ]},
+    { "codigo": "SA", "nombre": "Arabia Saudita", "municipios": [
+      { "ciudad": "Riad", "timezone": "Asia/Riyadh", "lat": 24.7766, "lon": 46.7123, "mesas": [{ "numero": 1, "puesto": "Riad", "direccion": "Riad, Arabia Saudita" }] }
+    ]},
+    { "codigo": "GR", "nombre": "Grecia", "municipios": [
+      { "ciudad": "Atenas", "timezone": "Europe/Athens", "lat": 37.9838, "lon": 23.7275, "mesas": [{ "numero": 1, "puesto": "Atenas", "direccion": "40, Kyprou Str. & Agiou Tryfonos" }] }
+    ]},
+    { "codigo": "RO", "nombre": "Rumania", "municipios": [
+      { "ciudad": "Bucarest", "timezone": "Europe/Bucharest", "lat": 44.4665, "lon": 26.0824, "mesas": [{ "numero": 1, "puesto": "Bucarest", "direccion": "Strada Clucerului 78-80 Piso 1, Sector 1, Rumanía" }] }
     ]}
   ]
 }
