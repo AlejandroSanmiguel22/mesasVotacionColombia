@@ -17,7 +17,7 @@ import COUNTRY_MAP from '../data/countryCodeMap.json'
 
 const WorldMap = memo(({ paises, config, selectedCountry, onSelectCountry }) => {
   const [tooltip, setTooltip] = useState(null)
-  const [position, setPosition] = useState({ center: [10, 20], zoom: 1 })
+  const [position, setPosition] = useState({ center: [10, 0], zoom: 1.4 })
   const [geoData, setGeoData] = useState(null)
 
   useEffect(() => {
@@ -63,7 +63,7 @@ const WorldMap = memo(({ paises, config, selectedCountry, onSelectCountry }) => 
   return (
     <div className={styles.mapWrapper}>
       <ComposableMap
-        projectionConfig={{ scale: 147 }}
+        projectionConfig={{ scale: 160 }}
         className={styles.map}
       >
         <ZoomableGroup
@@ -152,22 +152,22 @@ const WorldMap = memo(({ paises, config, selectedCountry, onSelectCountry }) => 
                   style={{ cursor: 'pointer' }}
                 >
                   <circle
-                    r={isSelected ? 6 : 4}
+                    r={isSelected ? 3.5 : 2}
                     fill={color}
                     stroke="#0F172A"
-                    strokeWidth={isSelected ? 2 : 1}
+                    strokeWidth={isSelected ? 1.5 : 0.8}
                     style={{
-                      filter: `drop-shadow(0 0 ${isSelected ? 6 : 3}px ${color})`,
+                      filter: `drop-shadow(0 0 ${isSelected ? 4 : 2}px ${color})`,
                       transition: 'all 0.2s ease',
                     }}
                   />
                   {isSelected && (
                     <circle
-                      r={10}
+                      r={6}
                       fill="none"
                       stroke={color}
-                      strokeWidth={1}
-                      strokeDasharray="3 2"
+                      strokeWidth={0.8}
+                      strokeDasharray="2 1.5"
                       opacity={0.7}
                     />
                   )}
@@ -201,7 +201,7 @@ const WorldMap = memo(({ paises, config, selectedCountry, onSelectCountry }) => 
           −
         </button>
         <button
-          onClick={() => setPosition({ center: [10, 20], zoom: 1 })}
+          onClick={() => setPosition({ center: [10, 20], zoom: 1.4 })}
           title="Restablecer vista"
         >
           ⊙
