@@ -26,8 +26,9 @@ function countryFlag(code) {
 
 export default function Notifications({ paises, config, extraNotifs = [], tick }) {
   const [dismissed, setDismissed] = useState(new Set())
+  const isFirstRender = useRef(true)
+  const prevKeysRef = useRef(new Set())
 
-  // Limpiar dismissed cuando tick cambia (nuevo ciclo de minuto)
   const notifs = useMemo(() => {
     setDismissed(new Set())
     const result = []
@@ -51,7 +52,18 @@ export default function Notifications({ paises, config, extraNotifs = [], tick }
         }
       }
     }
-    return result
+
+    if (isFirstRender.current) {
+      // En la carga inicial, registrar todos como "ya vistos" sin mostrarlos
+      isFirstRender.current = false
+      prevKeysRef.current = new Set(result.map((n) => n.key))
+      return []
+    }
+
+    // Solo mostrar los que son nuevos respecto al tick anterior
+    const newNotifs = result.filter((n) => !prevKeysRef.current.has(n.key))
+    prevKeysRef.current = new Set(result.map((n) => n.key))
+    return newNotifs
   }, [paises, config, tick])
 
   const dismiss = (key) => setDismissed((prev) => new Set([...prev, key]))
