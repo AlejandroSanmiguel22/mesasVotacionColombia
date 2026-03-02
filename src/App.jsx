@@ -207,6 +207,6 @@ function countryFlag(code) {
     ...code
       .toUpperCase()
       .split('')
-      .map((c) => 0x1f1e0 + c.charCodeAt(0) - 65)
+      .map((c) => 0x1f1e6 + c.charCodeAt(0) - 65)
   )
 }
