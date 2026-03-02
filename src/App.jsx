@@ -6,7 +6,7 @@ import styles from './App.module.css'
 import Stats from './components/Stats'
 import Notifications from './components/Notifications'
 import logoElecciones from './assets/elecciones2026.webp'
-import logoCancilleria from './assets/cancilleria.webp'
+import logoCancilleria from './assets/cancilleria.png'
 
 export default function App() {
   const [selectedCountry, setSelectedCountry] = useState(null)
@@ -115,7 +115,7 @@ export default function App() {
       <Notifications
         paises={mesasData.paises}
         config={config}
-        key={tick}
+        tick={tick}
         extraNotifs={testNotif ? [testNotif] : []}
       />
 

@@ -1,4 +1,4 @@
-import { useMemo } from 'react'
+import { useMemo, useState, useEffect, useRef } from 'react'
 import { getMesaStatus, STATUS_CONFIG } from '../utils/timeUtils'
 import styles from './Notifications.module.css'
 
@@ -20,12 +20,16 @@ function getEventTime(timezone, hora, minuto) {
 function countryFlag(code) {
   if (!code || code.length !== 2) return '🌍'
   return String.fromCodePoint(
-    ...code.toUpperCase().split('').map((c) => 0x1f1e0 + c.charCodeAt(0) - 65)
+    ...code.toUpperCase().split('').map((c) => 0x1f1e6 + c.charCodeAt(0) - 65)
   )
 }
 
-export default function Notifications({ paises, config, extraNotifs = [] }) {
+export default function Notifications({ paises, config, extraNotifs = [], tick }) {
+  const [dismissed, setDismissed] = useState(new Set())
+
+  // Limpiar dismissed cuando tick cambia (nuevo ciclo de minuto)
   const notifs = useMemo(() => {
+    setDismissed(new Set())
     const result = []
     for (const pais of paises) {
       for (const municipio of pais.municipios) {
@@ -48,9 +52,11 @@ export default function Notifications({ paises, config, extraNotifs = [] }) {
       }
     }
     return result
-  }, [paises, config])
+  }, [paises, config, tick])
 
-  const all = [...extraNotifs, ...notifs]
+  const dismiss = (key) => setDismissed((prev) => new Set([...prev, key]))
+
+  const all = [...extraNotifs, ...notifs].filter((n) => !dismissed.has(n.key))
   if (all.length === 0) return null
 
   return (
@@ -77,6 +83,7 @@ export default function Notifications({ paises, config, extraNotifs = [] }) {
               >
                 {cfg.label}
               </span>
+              <button className={styles.closeBtn} onClick={() => dismiss(n.key)}>✕</button>
             </div>
             <p className={styles.ciudad}>{n.ciudad}</p>
             <p className={styles.hora}>

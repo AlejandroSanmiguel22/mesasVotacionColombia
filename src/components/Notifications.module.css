@@ -92,3 +92,19 @@
   font-size: 0.72rem;
   color: rgba(255, 255, 255, 0.4);
 }
+
+.closeBtn {
+  margin-left: auto;
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.35);
+  font-size: 0.75rem;
+  cursor: pointer;
+  padding: 0 0 0 0.5rem;
+  line-height: 1;
+  flex-shrink: 0;
+  transition: color 0.15s;
+}
+.closeBtn:hover {
+  color: rgba(255, 255, 255, 0.85);
+}
