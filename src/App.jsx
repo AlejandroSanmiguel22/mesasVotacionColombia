@@ -1,10 +1,11 @@
 import { useState, useEffect, useMemo } from 'react'
 import WorldMap from './components/WorldMap'
 import CountryPanel from './components/CountryPanel'
-import Legend from './components/Legend'
-import Stats from './components/Stats'
 import mesasData from './data/mesas.json'
 import styles from './App.module.css'
+import Stats from './components/Stats'
+import logoElecciones from './assets/elecciones2026.webp'
+import logoCancilleria from './assets/cancilleria.webp'
 
 export default function App() {
   const [selectedCountry, setSelectedCountry] = useState(null)
@@ -61,7 +62,7 @@ export default function App() {
       <header className={styles.header}>
         <div className={styles.headerLeft}>
           <div className={styles.logo}>
-            <span className={styles.flag}>🇨🇴</span>
+            <img src={logoElecciones} alt="Elecciones 2026" className={styles.logoImg} />
             <div>
               <h1 className={styles.title}>Mesas de Votación</h1>
               <p className={styles.subtitle}>Colombia en el Mundo · {mesasData.fechaEleccion}</p>
@@ -74,6 +75,7 @@ export default function App() {
         </div>
 
         <div className={styles.headerRight}>
+          <img src={logoCancilleria} alt="Cancillería" className={styles.cancilleriaImg} />
           <div className={styles.clock}>
             <span className={styles.clockLabel}>UTC</span>
             <span className={styles.clockTime}>{utcTime}</span>
@@ -96,11 +98,6 @@ export default function App() {
             }}
             key={tick}
           />
-
-          {/* Leyenda sobre el mapa */}
-          <div className={styles.legendOverlay}>
-            <Legend />
-          </div>
 
           {/* Instrucción */}
           {!selectedCountry && (
