@@ -2,7 +2,7 @@ import { useMemo } from 'react'
 import { getCountryStatus, STATUS_CONFIG } from '../utils/timeUtils'
 import styles from './Stats.module.css'
 
-export default function Stats({ paises, config }) {
+export default function Stats({ paises, config, onSelectEstado }) {
   const conteos = useMemo(() => {
     const result = { 'abierta': 0, 'pronto-abrir': 0, 'pronto-cerrar': 0, cerrada: 0 }
     let totalMesas = 0
@@ -27,7 +27,8 @@ export default function Stats({ paises, config }) {
           <div
             key={estado}
             className={styles.statCard}
-            style={{ borderColor: cfg.colorBorder, background: cfg.colorBg }}
+            style={{ borderColor: cfg.colorBorder, background: cfg.colorBg, cursor: 'pointer' }}
+            onClick={() => onSelectEstado?.(estado)}
           >
             <span className={styles.statNum} style={{ color: cfg.color }}>
               {conteos[estado] || 0}

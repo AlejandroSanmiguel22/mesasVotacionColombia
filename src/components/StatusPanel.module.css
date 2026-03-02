@@ -1,0 +1,138 @@
+.overlay {
+  position: absolute;
+  top: 68px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 40;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 0.75rem;
+  pointer-events: none;
+}
+
+.panel {
+  background: rgba(10, 17, 32, 0.97);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 14px;
+  width: 360px;
+  max-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.6);
+  pointer-events: all;
+  animation: popIn 0.2s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+
+@keyframes popIn {
+  from { opacity: 0; transform: translateY(-10px) scale(0.97); }
+  to   { opacity: 1; transform: translateY(0)    scale(1);    }
+}
+
+/* ── HEADER ── */
+.header {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.9rem 1rem;
+  border-bottom: 1px solid;
+  flex-shrink: 0;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+  flex: 1;
+}
+
+.count {
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.4);
+}
+
+.closeBtn {
+  background: none;
+  border: none;
+  color: rgba(255,255,255,0.35);
+  font-size: 0.8rem;
+  cursor: pointer;
+  padding: 0;
+  transition: color 0.15s;
+}
+.closeBtn:hover { color: #fff; }
+
+/* ── LIST ── */
+.list {
+  overflow-y: auto;
+  flex: 1;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255,255,255,0.1) transparent;
+}
+
+.empty {
+  padding: 2rem 1rem;
+  text-align: center;
+  color: rgba(255,255,255,0.35);
+  font-size: 0.85rem;
+}
+
+.paisGroup {
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+.paisGroup:last-child { border-bottom: none; }
+
+.paisRow {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  width: 100%;
+  padding: 0.7rem 1rem 0.4rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.15s;
+}
+.paisRow:hover { background: rgba(255,255,255,0.04); }
+
+.flag { font-size: 1.1rem; flex-shrink: 0; }
+
+.paisNombre {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #fff;
+  flex: 1;
+}
+
+.mesasBadge {
+  font-size: 0.72rem;
+  font-weight: 600;
+}
+
+.ciudadRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.2rem 1rem 0.2rem 2.8rem;
+}
+
+.ciudadNombre {
+  font-size: 0.76rem;
+  color: rgba(255,255,255,0.5);
+}
+
+.ciudadMesas {
+  font-size: 0.7rem;
+  color: rgba(255,255,255,0.3);
+}

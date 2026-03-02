@@ -5,6 +5,7 @@ import mesasData from './data/mesas.json'
 import styles from './App.module.css'
 import Stats from './components/Stats'
 import Notifications from './components/Notifications'
+import StatusPanel from './components/StatusPanel'
 import logoElecciones from './assets/elecciones2026.webp'
 import logoCancilleria from './assets/cancilleria.png'
 
@@ -12,6 +13,7 @@ export default function App() {
   const [selectedCountry, setSelectedCountry] = useState(null)
   const [tick, setTick] = useState(0)
   const [search, setSearch] = useState('')
+  const [selectedEstado, setSelectedEstado] = useState(null)
 
   // Re-renderizar cada minuto para actualizar estados
   useEffect(() => {
@@ -99,7 +101,12 @@ export default function App() {
           </div>
         </div>
         <div className={styles.headerCenter}>
-          <Stats paises={mesasData.paises} config={config} key={tick} />
+          <Stats
+            paises={mesasData.paises}
+            config={config}
+            key={tick}
+            onSelectEstado={(e) => setSelectedEstado((prev) => prev === e ? null : e)}
+          />
         </div>
 
         <div className={styles.headerRight}>
@@ -110,6 +117,20 @@ export default function App() {
           </div>
         </div>
       </header>
+
+      {/* Panel de estado al clicar tarjeta Stats */}
+      {selectedEstado && (
+        <StatusPanel
+          estado={selectedEstado}
+          paises={mesasData.paises}
+          config={config}
+          onClose={() => setSelectedEstado(null)}
+          onSelectCountry={(pais) => {
+            setSelectedCountry(pais)
+            setSelectedEstado(null)
+          }}
+        />
+      )}
 
       {/* Notificaciones de apertura/cierre */}
       <Notifications
