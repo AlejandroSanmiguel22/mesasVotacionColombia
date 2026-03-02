@@ -75,7 +75,7 @@ export default function App() {
     const update = () =>
       setUtcTime(
         new Date().toLocaleTimeString('es-CO', {
-          timeZone: 'UTC',
+          timeZone: 'America/Bogota',
           hour: '2-digit',
           minute: '2-digit',
           second: '2-digit',
@@ -112,7 +112,7 @@ export default function App() {
         <div className={styles.headerRight}>
           <img src={logoCancilleria} alt="Cancillería" className={styles.cancilleriaImg} />
           <div className={styles.clock}>
-            <span className={styles.clockLabel}>UTC</span>
+            <span className={styles.clockLabel}>Colombia</span>
             <span className={styles.clockTime}>{utcTime}</span>
           </div>
         </div>
