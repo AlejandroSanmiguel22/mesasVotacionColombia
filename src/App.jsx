@@ -4,6 +4,7 @@ import CountryPanel from './components/CountryPanel'
 import mesasData from './data/mesas.json'
 import styles from './App.module.css'
 import Stats from './components/Stats'
+import Notifications from './components/Notifications'
 import logoElecciones from './assets/elecciones2026.webp'
 import logoCancilleria from './assets/cancilleria.webp'
 
@@ -38,6 +39,34 @@ export default function App() {
     )
   }, [search])
 
+  const [testNotif, setTestNotif] = useState(null)
+
+  function lanzarPrueba() {
+    const opciones = [
+      {
+        key: 'test-abrir',
+        flag: '🇺🇸',
+        pais: 'Estados Unidos',
+        ciudad: 'Miami Consulado',
+        estado: 'pronto-abrir',
+        horaEvento: '08:00 a. m.',
+        mesas: 3,
+      },
+      {
+        key: 'test-cerrar',
+        flag: '🇪🇸',
+        pais: 'España',
+        ciudad: 'Madrid Consulado',
+        estado: 'pronto-cerrar',
+        horaEvento: '04:00 p. m.',
+        mesas: 2,
+      },
+    ]
+    const notif = opciones[Math.floor(Math.random() * opciones.length)]
+    setTestNotif(notif)
+    setTimeout(() => setTestNotif(null), 6000)
+  }
+
   // Hora actual UTC
   const [utcTime, setUtcTime] = useState('')
   useEffect(() => {
@@ -64,12 +93,11 @@ export default function App() {
           <div className={styles.logo}>
             <img src={logoElecciones} alt="Elecciones 2026" className={styles.logoImg} />
             <div>
-              <h1 className={styles.title}>Mesas de Votación</h1>
-              <p className={styles.subtitle}>Colombia en el Mundo · {mesasData.fechaEleccion}</p>
+              <h1 className={styles.title}>Puestos de Votación</h1>
+              <p className={styles.subtitle}>Colombia en el Mundo</p>
             </div>
           </div>
         </div>
-
         <div className={styles.headerCenter}>
           <Stats paises={mesasData.paises} config={config} key={tick} />
         </div>
@@ -82,6 +110,19 @@ export default function App() {
           </div>
         </div>
       </header>
+
+      {/* Notificaciones de apertura/cierre */}
+      <Notifications
+        paises={mesasData.paises}
+        config={config}
+        key={tick}
+        extraNotifs={testNotif ? [testNotif] : []}
+      />
+
+      {/* Botón de prueba */}
+      <button className={styles.testBtn} onClick={lanzarPrueba}>
+        🧪 Prueba notificación
+      </button>
 
       {/* Main Content */}
       <main className={styles.main}>
@@ -99,12 +140,7 @@ export default function App() {
             key={tick}
           />
 
-          {/* Instrucción */}
-          {!selectedCountry && (
-            <div className={styles.mapHint}>
-              Haz clic en un país o ciudad para ver sus mesas de votación
-            </div>
-          )}
+
         </div>
 
         {/* Panel lateral */}
