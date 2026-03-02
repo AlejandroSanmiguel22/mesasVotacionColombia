@@ -1,5 +1,5 @@
 import { useMemo } from 'react'
-import { getMesaStatus, getLocalTime, STATUS_CONFIG } from '../utils/timeUtils'
+import { getMesaStatus, getLocalTime, STATUS_CONFIG, esSoloDomingo } from '../utils/timeUtils'
 import styles from './CountryPanel.module.css'
 
 export default function CountryPanel({ pais, config, onClose }) {
@@ -7,7 +7,7 @@ export default function CountryPanel({ pais, config, onClose }) {
     () =>
       pais.municipios.map((municipio) => ({
         ...municipio,
-        estado: getMesaStatus(municipio.timezone, config),
+        estado: getMesaStatus(municipio.timezone, config, esSoloDomingo(municipio.ciudad), municipio.fechaInicio),
         horaLocal: getLocalTime(municipio.timezone),
       })),
     // eslint-disable-next-line react-hooks/exhaustive-deps

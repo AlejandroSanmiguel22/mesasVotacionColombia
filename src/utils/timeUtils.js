@@ -1,4 +1,11 @@
 /**
+ * Retorna true si el municipio solo opera en domingo (no tiene 'Consulado' en el nombre).
+ */
+export function esSoloDomingo(ciudad) {
+  return !ciudad.toLowerCase().includes('consulado')
+}
+
+/**
  * Calcula el estado de una mesa de votación basado en la hora local del timezone.
  *
  * Estados:
@@ -7,7 +14,7 @@
  *   'abierta'         → Verde   (dentro del horario)
  *   'pronto-cerrar'  → Naranja (30 min antes del cierre)
  */
-export function getMesaStatus(timezone, config = {}) {
+export function getMesaStatus(timezone, config = {}, soloDomingo = false, fechaInicio = null) {
   const {
     horaApertura = { hora: 8, minuto: 0 },
     horaCierre = { hora: 16, minuto: 0 },
@@ -19,6 +26,18 @@ export function getMesaStatus(timezone, config = {}) {
     const ahoraLocal = new Date(
       new Date().toLocaleString('en-US', { timeZone: timezone })
     )
+
+    // Si solo opera en domingo y hoy no es domingo → cerrada
+    if (soloDomingo && ahoraLocal.getDay() !== 0) {
+      return 'cerrada'
+    }
+
+    // Si tiene fecha de inicio y aún no ha llegado → cerrada
+    if (fechaInicio) {
+      const inicio = new Date(fechaInicio + 'T00:00:00')
+      const hoyLocal = new Date(ahoraLocal.getFullYear(), ahoraLocal.getMonth(), ahoraLocal.getDate())
+      if (hoyLocal < inicio) return 'cerrada'
+    }
 
     const totalMinutos =
       ahoraLocal.getHours() * 60 + ahoraLocal.getMinutes()
@@ -107,7 +126,7 @@ export function getCountryStatus(pais, config = {}) {
   let mejorEstado = 'cerrada'
 
   for (const municipio of pais.municipios) {
-    const estado = getMesaStatus(municipio.timezone, config)
+    const estado = getMesaStatus(municipio.timezone, config, esSoloDomingo(municipio.ciudad), municipio.fechaInicio)
     if (
       prioridad.indexOf(estado) < prioridad.indexOf(mejorEstado)
     ) {

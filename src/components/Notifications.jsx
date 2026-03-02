@@ -1,5 +1,5 @@
 import { useMemo, useState, useEffect, useRef } from 'react'
-import { getMesaStatus, STATUS_CONFIG } from '../utils/timeUtils'
+import { getMesaStatus, STATUS_CONFIG, esSoloDomingo } from '../utils/timeUtils'
 import styles from './Notifications.module.css'
 
 function getEventTime(timezone, hora, minuto) {
@@ -34,7 +34,7 @@ export default function Notifications({ paises, config, extraNotifs = [], tick }
     const result = []
     for (const pais of paises) {
       for (const municipio of pais.municipios) {
-        const estado = getMesaStatus(municipio.timezone, config)
+        const estado = getMesaStatus(municipio.timezone, config, esSoloDomingo(municipio.ciudad), municipio.fechaInicio)
         if (estado === 'pronto-abrir' || estado === 'pronto-cerrar') {
           const esApertura = estado === 'pronto-abrir'
           const { hora, minuto } = esApertura

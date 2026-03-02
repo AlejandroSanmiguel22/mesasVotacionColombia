@@ -201,7 +201,7 @@
       { "ciudad": "Salt Lake City", "timezone": "America/Boise", "lat": 43.5875, "lon": -116.5473, "mesas": [{ "numero": 1, "puesto": "Salt Lake City", "direccion": "315 Stampede Dr, Nampa, ID 83687" }] },
       { "ciudad": "San Francisco Las Vegas", "timezone": "America/Los_Angeles", "lat": 36.1662, "lon": -115.1079, "mesas": [{ "numero": 1, "puesto": "San Francisco - Las Vegas", "direccion": "2900 Stewart Ave, Las Vegas, NV 89101" }] },
       { "ciudad": "San Francisco Alaska", "timezone": "America/Anchorage", "lat": 61.1854, "lon": -149.9443, "mesas": [{ "numero": 1, "puesto": "San Francisco - Alaska", "direccion": "3900 Wisconsin St, Anchorage, AK 99517" }] },
-      { "ciudad": "Hawaii", "timezone": "Pacific/Honolulu", "lat": 21.2985, "lon": -157.8619, "mesas": [{ "numero": 1, "puesto": "Hawaii", "direccion": "660 Ala Moana Blvd, Honolulu, HI 96813" }] }
+      { "ciudad": "Hawaii", "timezone": "Pacific/Honolulu", "fechaInicio": "2026-03-08", "lat": 21.2985, "lon": -157.8619, "mesas": [{ "numero": 1, "puesto": "Hawaii", "direccion": "660 Ala Moana Blvd, Honolulu, HI 96813" }] }
     ]},
     { "codigo": "PH", "nombre": "Filipinas", "municipios": [
       { "ciudad": "Manila Consulado", "timezone": "Asia/Manila", "lat": 14.5535, "lon": 121.0525, "mesas": [{ "numero": 1, "puesto": "Manila Consulado", "direccion": "Piso 14 Inoza Tower 40th Street corner 11th Avenue" }] }

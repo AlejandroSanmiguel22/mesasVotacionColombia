@@ -137,13 +137,7 @@ export default function App() {
         paises={mesasData.paises}
         config={config}
         tick={tick}
-        extraNotifs={testNotif ? [testNotif] : []}
       />
-
-      {/* Botón de prueba */}
-      <button className={styles.testBtn} onClick={lanzarPrueba}>
-        🧪 Prueba notificación
-      </button>
 
       {/* Main Content */}
       <main className={styles.main}>
