@@ -56,7 +56,23 @@ export default function Notifications({ paises, config, extraNotifs = [], tick }
 
   const dismiss = (key) => setDismissed((prev) => new Set([...prev, key]))
 
+  const scheduledRef = useRef(new Set())
   const all = [...extraNotifs, ...notifs].filter((n) => !dismissed.has(n.key))
+  const allKeys = all.map((n) => n.key).join(',')
+
+  // Auto-dismiss cada notificación a los 8 segundos de aparecer
+  useEffect(() => {
+    all.forEach((n) => {
+      if (!scheduledRef.current.has(n.key)) {
+        scheduledRef.current.add(n.key)
+        setTimeout(() => {
+          dismiss(n.key)
+          scheduledRef.current.delete(n.key)
+        }, 8000)
+      }
+    })
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [allKeys])
   if (all.length === 0) return null
 
   return (
