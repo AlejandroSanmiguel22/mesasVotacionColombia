@@ -14,7 +14,10 @@ export function esSoloDomingo(ciudad) {
  *   'abierta'         → Verde   (dentro del horario)
  *   'pronto-cerrar'  → Naranja (30 min antes del cierre)
  */
-export function getMesaStatus(timezone, config = {}, soloDomingo = false, fechaInicio = null) {
+export function getMesaStatus(timezone, config = {}, soloDomingo = false, fechaInicio = null, esFuerzaMayor = false) {
+  // Si está marcado como fuerza mayor, retornar directamente
+  if (esFuerzaMayor) return 'fuerza-mayor'
+
   const {
     horaApertura = { hora: 8, minuto: 0 },
     horaCierre = { hora: 16, minuto: 0 },
@@ -115,18 +118,29 @@ export const STATUS_CONFIG = {
     icon: '🔒',
     descripcion: 'La mesa está cerrada',
   },
+  'fuerza-mayor': {
+    color: '#A855F7',
+    colorBg: 'rgba(168,85,247,0.15)',
+    colorBorder: 'rgba(168,85,247,0.4)',
+    label: 'Fuerza Mayor',
+    dot: '🟣',
+    icon: '⚡',
+    descripcion: 'Mesa no disponible por situación extraordinaria',
+  },
 }
 
 /**
  * Dado un país (con múltiples municipios y timezones), retorna el estado
  * más representativo para mostrar en el mapa (prioridad: abierta > pronto > cerrada).
  */
-export function getCountryStatus(pais, config = {}) {
-  const prioridad = ['abierta', 'pronto-cerrar', 'pronto-abrir', 'cerrada']
+export function getCountryStatus(pais, config = {}, overrides = {}) {
+  const prioridad = ['abierta', 'pronto-cerrar', 'pronto-abrir', 'fuerza-mayor', 'cerrada']
   let mejorEstado = 'cerrada'
 
   for (const municipio of pais.municipios) {
-    const estado = getMesaStatus(municipio.timezone, config, esSoloDomingo(municipio.ciudad), municipio.fechaInicio)
+    const key = `${pais.codigo}-${municipio.ciudad}`
+    const esFM = !!overrides[key]
+    const estado = getMesaStatus(municipio.timezone, config, esSoloDomingo(municipio.ciudad), municipio.fechaInicio, esFM)
     if (
       prioridad.indexOf(estado) < prioridad.indexOf(mejorEstado)
     ) {

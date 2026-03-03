@@ -9,7 +9,7 @@ function countryFlag(code) {
   )
 }
 
-export default function StatusPanel({ estado, paises, config, onClose, onSelectCountry }) {
+export default function StatusPanel({ estado, paises, config, onClose, onSelectCountry, overrides = {} }) {
   const cfg = STATUS_CONFIG[estado]
   const panelRef = useRef(null)
 
@@ -17,14 +17,18 @@ export default function StatusPanel({ estado, paises, config, onClose, onSelectC
     const result = []
     for (const pais of paises) {
       const municipiosFiltrados = pais.municipios.filter(
-        (m) => getMesaStatus(m.timezone, config, esSoloDomingo(m.ciudad), m.fechaInicio) === estado
+        (m) => {
+          const key = `${pais.codigo}-${m.ciudad}`
+          const esFM = !!overrides[key]
+          return getMesaStatus(m.timezone, config, esSoloDomingo(m.ciudad), m.fechaInicio, esFM) === estado
+        }
       )
       if (municipiosFiltrados.length > 0) {
         result.push({ pais, municipios: municipiosFiltrados })
       }
     }
     return result
-  }, [paises, config, estado])
+  }, [paises, config, estado, overrides])
 
   // Cerrar al hacer clic fuera
   useEffect(() => {

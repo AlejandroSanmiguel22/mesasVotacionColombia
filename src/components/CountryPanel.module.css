@@ -218,6 +218,47 @@
 }
 
 /* ── FOOTER ──────────────────────────────────────────────── */
+
+/* ── FUERZA MAYOR BUTTON ─────────────────────────────────── */
+.fuerzaMayorBtn {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.75rem;
+  border-radius: 8px;
+  border: 1px solid rgba(168, 85, 247, 0.3);
+  background: rgba(168, 85, 247, 0.08);
+  color: #A855F7;
+  font-size: 0.72rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-bottom: 0.75rem;
+  width: fit-content;
+}
+
+.fuerzaMayorBtn:hover {
+  background: rgba(168, 85, 247, 0.18);
+  border-color: rgba(168, 85, 247, 0.5);
+  box-shadow: 0 0 12px rgba(168, 85, 247, 0.15);
+}
+
+.fuerzaMayorActive {
+  background: rgba(168, 85, 247, 0.2);
+  border-color: rgba(168, 85, 247, 0.6);
+  box-shadow: 0 0 8px rgba(168, 85, 247, 0.2);
+}
+
+.fuerzaMayorActive:hover {
+  background: rgba(239, 68, 68, 0.15);
+  border-color: rgba(239, 68, 68, 0.4);
+  color: #EF4444;
+}
+
+.fuerzaMayorIcon {
+  font-size: 0.85rem;
+}
+
 .footer {
   padding: 0.875rem 1.25rem;
   border-top: 1px solid #1E293B;

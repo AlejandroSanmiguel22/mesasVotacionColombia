@@ -15,6 +15,28 @@ export default function App() {
   const [search, setSearch] = useState('')
   const [selectedEstado, setSelectedEstado] = useState(null)
 
+  // Overrides de fuerza mayor (se guardan en localStorage)
+  const [fuerzaMayorOverrides, setFuerzaMayorOverrides] = useState(() => {
+    try {
+      const saved = localStorage.getItem('fuerzaMayorOverrides')
+      return saved ? JSON.parse(saved) : {}
+    } catch { return {} }
+  })
+
+  const toggleFuerzaMayor = (codigoPais, ciudad) => {
+    setFuerzaMayorOverrides(prev => {
+      const key = `${codigoPais}-${ciudad}`
+      const next = { ...prev }
+      if (next[key]) {
+        delete next[key]
+      } else {
+        next[key] = { motivo: 'Situación extraordinaria', fecha: new Date().toISOString() }
+      }
+      localStorage.setItem('fuerzaMayorOverrides', JSON.stringify(next))
+      return next
+    })
+  }
+
   // Re-renderizar cada minuto para actualizar estados
   useEffect(() => {
     const interval = setInterval(() => setTick((t) => t + 1), 60_000)
@@ -105,6 +127,7 @@ export default function App() {
             paises={mesasData.paises}
             config={config}
             key={tick}
+            overrides={fuerzaMayorOverrides}
             onSelectEstado={(e) => setSelectedEstado((prev) => prev === e ? null : e)}
           />
         </div>
@@ -124,6 +147,7 @@ export default function App() {
           estado={selectedEstado}
           paises={mesasData.paises}
           config={config}
+          overrides={fuerzaMayorOverrides}
           onClose={() => setSelectedEstado(null)}
           onSelectCountry={(pais) => {
             setSelectedCountry(pais)
@@ -137,6 +161,7 @@ export default function App() {
         paises={mesasData.paises}
         config={config}
         tick={tick}
+        overrides={fuerzaMayorOverrides}
       />
 
       {/* Main Content */}
@@ -147,6 +172,7 @@ export default function App() {
             paises={mesasData.paises}
             config={config}
             selectedCountry={selectedCountry}
+            overrides={fuerzaMayorOverrides}
             onSelectCountry={(pais) => {
               setSelectedCountry((prev) =>
                 prev?.codigo === pais.codigo ? null : pais
@@ -164,6 +190,8 @@ export default function App() {
             <CountryPanel
               pais={selectedCountry}
               config={config}
+              overrides={fuerzaMayorOverrides}
+              onToggleFuerzaMayor={toggleFuerzaMayor}
               onClose={() => setSelectedCountry(null)}
               key={selectedCountry.codigo + tick}
             />

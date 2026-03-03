@@ -1,7 +1,7 @@
 import { STATUS_CONFIG } from '../utils/timeUtils'
 import styles from './Legend.module.css'
 
-const ESTADOS = ['pronto-abrir', 'abierta', 'pronto-cerrar', 'cerrada']
+const ESTADOS = ['pronto-abrir', 'abierta', 'pronto-cerrar', 'cerrada', 'fuerza-mayor']
 
 export default function Legend() {
   return (

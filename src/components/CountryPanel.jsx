@@ -2,16 +2,21 @@ import { useMemo } from 'react'
 import { getMesaStatus, getLocalTime, STATUS_CONFIG, esSoloDomingo } from '../utils/timeUtils'
 import styles from './CountryPanel.module.css'
 
-export default function CountryPanel({ pais, config, onClose }) {
+export default function CountryPanel({ pais, config, onClose, overrides = {}, onToggleFuerzaMayor }) {
   const municipiosConEstado = useMemo(
     () =>
-      pais.municipios.map((municipio) => ({
-        ...municipio,
-        estado: getMesaStatus(municipio.timezone, config, esSoloDomingo(municipio.ciudad), municipio.fechaInicio),
-        horaLocal: getLocalTime(municipio.timezone),
-      })),
+      pais.municipios.map((municipio) => {
+        const key = `${pais.codigo}-${municipio.ciudad}`
+        const esFM = !!overrides[key]
+        return {
+          ...municipio,
+          estado: getMesaStatus(municipio.timezone, config, esSoloDomingo(municipio.ciudad), municipio.fechaInicio, esFM),
+          horaLocal: getLocalTime(municipio.timezone),
+          esFuerzaMayor: esFM,
+        }
+      }),
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    [pais]
+    [pais, overrides]
   )
 
   const totalMesas = municipiosConEstado.reduce(
@@ -24,6 +29,10 @@ export default function CountryPanel({ pais, config, onClose }) {
       (m.estado === 'abierta' || m.estado === 'pronto-cerrar'
         ? m.mesas.length
         : 0),
+    0
+  )
+  const mesasFuerzaMayor = municipiosConEstado.reduce(
+    (acc, m) => acc + (m.estado === 'fuerza-mayor' ? m.mesas.length : 0),
     0
   )
 
@@ -60,8 +69,14 @@ export default function CountryPanel({ pais, config, onClose }) {
         </div>
         <div className={styles.summaryItem}>
           <span style={{ color: STATUS_CONFIG['cerrada'].color }}>●</span>
-          <span>{totalMesas - mesasAbiertas} cerradas</span>
+          <span>{totalMesas - mesasAbiertas - mesasFuerzaMayor} cerradas</span>
         </div>
+        {mesasFuerzaMayor > 0 && (
+          <div className={styles.summaryItem}>
+            <span style={{ color: STATUS_CONFIG['fuerza-mayor'].color }}>●</span>
+            <span>{mesasFuerzaMayor} fuerza mayor</span>
+          </div>
+        )}
       </div>
 
       {/* Lista de municipios y mesas */}
@@ -97,6 +112,16 @@ export default function CountryPanel({ pais, config, onClose }) {
               </div>
 
               <p className={styles.statusDesc}>{statusCfg.descripcion}</p>
+
+              {/* Botón de Fuerza Mayor */}
+              <button
+                className={`${styles.fuerzaMayorBtn} ${municipio.esFuerzaMayor ? styles.fuerzaMayorActive : ''}`}
+                onClick={() => onToggleFuerzaMayor?.(pais.codigo, municipio.ciudad)}
+                title={municipio.esFuerzaMayor ? 'Quitar marca de Fuerza Mayor' : 'Reportar como Fuerza Mayor'}
+              >
+                <span className={styles.fuerzaMayorIcon}>⚡</span>
+                <span>{municipio.esFuerzaMayor ? 'Quitar Fuerza Mayor' : 'Reportar Fuerza Mayor'}</span>
+              </button>
 
               <div className={styles.mesasList}>
                 {municipio.mesas.map((mesa) => (
