@@ -14,7 +14,7 @@ export function esSoloDomingo(ciudad) {
  *   'abierta'         → Verde   (dentro del horario)
  *   'pronto-cerrar'  → Naranja (30 min antes del cierre)
  */
-export function getMesaStatus(timezone, config = {}, soloDomingo = false, fechaInicio = null, esFuerzaMayor = false) {
+export function getMesaStatus(timezone, config = {}, soloDomingo = false, fechaInicio = null, esFuerzaMayor = false, fechaEleccion = null) {
   // Si está marcado como fuerza mayor, retornar directamente
   if (esFuerzaMayor) return 'fuerza-mayor'
 
@@ -30,6 +30,14 @@ export function getMesaStatus(timezone, config = {}, soloDomingo = false, fechaI
       new Date().toLocaleString('en-US', { timeZone: timezone })
     )
 
+    const hoyLocal = new Date(ahoraLocal.getFullYear(), ahoraLocal.getMonth(), ahoraLocal.getDate())
+
+    // Si ya pasó la fecha de elección en este timezone → cerrada definitivamente
+    if (fechaEleccion) {
+      const eleccion = new Date(fechaEleccion + 'T00:00:00')
+      if (hoyLocal > eleccion) return 'cerrada'
+    }
+
     // Si solo opera en domingo y hoy no es domingo → cerrada
     if (soloDomingo && ahoraLocal.getDay() !== 0) {
       return 'cerrada'
@@ -38,7 +46,6 @@ export function getMesaStatus(timezone, config = {}, soloDomingo = false, fechaI
     // Si tiene fecha de inicio y aún no ha llegado → cerrada
     if (fechaInicio) {
       const inicio = new Date(fechaInicio + 'T00:00:00')
-      const hoyLocal = new Date(ahoraLocal.getFullYear(), ahoraLocal.getMonth(), ahoraLocal.getDate())
       if (hoyLocal < inicio) return 'cerrada'
     }
 
@@ -133,14 +140,14 @@ export const STATUS_CONFIG = {
  * Dado un país (con múltiples municipios y timezones), retorna el estado
  * más representativo para mostrar en el mapa (prioridad: abierta > pronto > cerrada).
  */
-export function getCountryStatus(pais, config = {}, overrides = {}) {
+export function getCountryStatus(pais, config = {}, overrides = {}, fechaEleccion = null) {
   const prioridad = ['abierta', 'pronto-cerrar', 'pronto-abrir', 'fuerza-mayor', 'cerrada']
   let mejorEstado = 'cerrada'
 
   for (const municipio of pais.municipios) {
     const key = `${pais.codigo}-${municipio.ciudad}`
     const esFM = !!overrides[key]
-    const estado = getMesaStatus(municipio.timezone, config, esSoloDomingo(municipio.ciudad), municipio.fechaInicio, esFM)
+    const estado = getMesaStatus(municipio.timezone, config, esSoloDomingo(municipio.ciudad), municipio.fechaInicio, esFM, fechaEleccion)
     if (
       prioridad.indexOf(estado) < prioridad.indexOf(mejorEstado)
     ) {

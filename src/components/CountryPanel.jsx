@@ -2,7 +2,7 @@ import { useMemo } from 'react'
 import { getMesaStatus, getLocalTime, STATUS_CONFIG, esSoloDomingo } from '../utils/timeUtils'
 import styles from './CountryPanel.module.css'
 
-export default function CountryPanel({ pais, config, onClose, overrides = {}, onToggleFuerzaMayor }) {
+export default function CountryPanel({ pais, config, onClose, overrides = {}, onToggleFuerzaMayor, fechaEleccion = null }) {
   const municipiosConEstado = useMemo(
     () =>
       pais.municipios.map((municipio) => {
@@ -10,7 +10,7 @@ export default function CountryPanel({ pais, config, onClose, overrides = {}, on
         const esFM = !!overrides[key]
         return {
           ...municipio,
-          estado: getMesaStatus(municipio.timezone, config, esSoloDomingo(municipio.ciudad), municipio.fechaInicio, esFM),
+          estado: getMesaStatus(municipio.timezone, config, esSoloDomingo(municipio.ciudad), municipio.fechaInicio, esFM, fechaEleccion),
           horaLocal: getLocalTime(municipio.timezone),
           esFuerzaMayor: esFM,
         }

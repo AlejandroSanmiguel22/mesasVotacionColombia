@@ -2,7 +2,7 @@ import { useMemo } from 'react'
 import { getCountryStatus, STATUS_CONFIG } from '../utils/timeUtils'
 import styles from './Stats.module.css'
 
-export default function Stats({ paises, config, onSelectEstado, overrides = {} }) {
+export default function Stats({ paises, config, onSelectEstado, overrides = {}, fechaEleccion = null }) {
   const conteos = useMemo(() => {
     const result = { 'abierta': 0, 'pronto-abrir': 0, 'pronto-cerrar': 0, cerrada: 0, 'fuerza-mayor': 0 }
     let totalMesas = 0
@@ -11,7 +11,7 @@ export default function Stats({ paises, config, onSelectEstado, overrides = {} }
       for (const municipio of pais.municipios) {
         const key = `${pais.codigo}-${municipio.ciudad}`
         const esFM = !!overrides[key]
-        const estado = getCountryStatus({ municipios: [municipio], codigo: pais.codigo }, config, overrides)
+        const estado = getCountryStatus({ municipios: [municipio], codigo: pais.codigo }, config, overrides, fechaEleccion)
         const mesasCount = municipio.mesas.length
         result[estado] = (result[estado] || 0) + mesasCount
         totalMesas += mesasCount

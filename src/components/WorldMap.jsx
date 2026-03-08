@@ -15,7 +15,7 @@ const GEO_URL =
 // Mapa de alpha-2 a numeric ISO para comparar con TopoJSON
 import COUNTRY_MAP from '../data/countryCodeMap.json'
 
-const WorldMap = memo(({ paises, config, selectedCountry, onSelectCountry, overrides = {} }) => {
+const WorldMap = memo(({ paises, config, selectedCountry, onSelectCountry, overrides = {}, fechaEleccion = null }) => {
   const [tooltip, setTooltip] = useState(null)
   const [position, setPosition] = useState({ center: [10, 0], zoom: 1.4 })
   const [geoData, setGeoData] = useState(null)
@@ -55,7 +55,7 @@ const WorldMap = memo(({ paises, config, selectedCountry, onSelectCountry, overr
     const numericId = String(parseInt(geo.id, 10))
     const alpha2 = COUNTRY_MAP[numericId]
     if (alpha2 && paisMap[alpha2]) {
-      return getCountryStatus(paisMap[alpha2], config, overrides)
+      return getCountryStatus(paisMap[alpha2], config, overrides, fechaEleccion)
     }
     return null
   }
@@ -136,7 +136,8 @@ const WorldMap = memo(({ paises, config, selectedCountry, onSelectCountry, overr
                 : getCountryStatus(
                     { municipios: [municipio], codigo: pais.codigo },
                     config,
-                    overrides
+                    overrides,
+                    fechaEleccion
                   )
               const { color } = STATUS_CONFIG[status]
               const isSelected = selectedCountry?.codigo === pais.codigo

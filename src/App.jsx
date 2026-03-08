@@ -128,6 +128,7 @@ export default function App() {
             config={config}
             key={tick}
             overrides={fuerzaMayorOverrides}
+            fechaEleccion={mesasData.fechaEleccion}
             onSelectEstado={(e) => setSelectedEstado((prev) => prev === e ? null : e)}
           />
         </div>
@@ -148,6 +149,7 @@ export default function App() {
           paises={mesasData.paises}
           config={config}
           overrides={fuerzaMayorOverrides}
+          fechaEleccion={mesasData.fechaEleccion}
           onClose={() => setSelectedEstado(null)}
           onSelectCountry={(pais) => {
             setSelectedCountry(pais)
@@ -162,6 +164,7 @@ export default function App() {
         config={config}
         tick={tick}
         overrides={fuerzaMayorOverrides}
+        fechaEleccion={mesasData.fechaEleccion}
       />
 
       {/* Main Content */}
@@ -173,6 +176,7 @@ export default function App() {
             config={config}
             selectedCountry={selectedCountry}
             overrides={fuerzaMayorOverrides}
+            fechaEleccion={mesasData.fechaEleccion}
             onSelectCountry={(pais) => {
               setSelectedCountry((prev) =>
                 prev?.codigo === pais.codigo ? null : pais
@@ -191,6 +195,7 @@ export default function App() {
               pais={selectedCountry}
               config={config}
               overrides={fuerzaMayorOverrides}
+              fechaEleccion={mesasData.fechaEleccion}
               onToggleFuerzaMayor={toggleFuerzaMayor}
               onClose={() => setSelectedCountry(null)}
               key={selectedCountry.codigo + tick}

@@ -24,7 +24,7 @@ function countryFlag(code) {
   )
 }
 
-export default function Notifications({ paises, config, extraNotifs = [], tick, overrides = {} }) {
+export default function Notifications({ paises, config, extraNotifs = [], tick, overrides = {}, fechaEleccion = null }) {
   const [dismissed, setDismissed] = useState(new Set())
   const isFirstRender = useRef(true)
   const prevKeysRef = useRef(new Set())
@@ -36,7 +36,7 @@ export default function Notifications({ paises, config, extraNotifs = [], tick, 
       for (const municipio of pais.municipios) {
         const key = `${pais.codigo}-${municipio.ciudad}`
         if (overrides[key]) continue // Saltar municipios marcados como fuerza mayor
-        const estado = getMesaStatus(municipio.timezone, config, esSoloDomingo(municipio.ciudad), municipio.fechaInicio)
+        const estado = getMesaStatus(municipio.timezone, config, esSoloDomingo(municipio.ciudad), municipio.fechaInicio, false, fechaEleccion)
         if (estado === 'pronto-abrir' || estado === 'pronto-cerrar') {
           const esApertura = estado === 'pronto-abrir'
           const { hora, minuto } = esApertura
