@@ -1,5 +1,5 @@
 import { useMemo, useEffect, useRef } from 'react'
-import { getMesaStatus, STATUS_CONFIG, esSoloDomingo } from '../utils/timeUtils'
+import { getMesaStatus, STATUS_CONFIG } from '../utils/timeUtils'
 import styles from './StatusPanel.module.css'
 
 function countryFlag(code) {
@@ -20,7 +20,7 @@ export default function StatusPanel({ estado, paises, config, onClose, onSelectC
         (m) => {
           const key = `${pais.codigo}-${m.ciudad}`
           const esFM = !!overrides[key]
-          return getMesaStatus(m.timezone, config, esSoloDomingo(m.ciudad), m.fechaInicio, esFM, fechaEleccion) === estado
+          return getMesaStatus(m.timezone, config, m.soloDomingo, m.fechaInicio, esFM, fechaEleccion) === estado
         }
       )
       if (municipiosFiltrados.length > 0) {

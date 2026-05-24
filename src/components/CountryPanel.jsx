@@ -1,5 +1,5 @@
 import { useMemo } from 'react'
-import { getMesaStatus, getLocalTime, STATUS_CONFIG, esSoloDomingo } from '../utils/timeUtils'
+import { getMesaStatus, getLocalTime, STATUS_CONFIG, getDireccionPorDia } from '../utils/timeUtils'
 import styles from './CountryPanel.module.css'
 
 export default function CountryPanel({ pais, config, onClose, overrides = {}, onToggleFuerzaMayor, fechaEleccion = null }) {
@@ -10,7 +10,7 @@ export default function CountryPanel({ pais, config, onClose, overrides = {}, on
         const esFM = !!overrides[key]
         return {
           ...municipio,
-          estado: getMesaStatus(municipio.timezone, config, esSoloDomingo(municipio.ciudad), municipio.fechaInicio, esFM, fechaEleccion),
+          estado: getMesaStatus(municipio.timezone, config, municipio.soloDomingo, municipio.fechaInicio, esFM, fechaEleccion),
           horaLocal: getLocalTime(municipio.timezone),
           esFuerzaMayor: esFM,
         }
@@ -136,7 +136,7 @@ export default function CountryPanel({ pais, config, onClose, overrides = {}, on
                     </div>
                     <div className={styles.mesaDetalles}>
                       <p className={styles.mesaPuesto}>{mesa.puesto}</p>
-                      <p className={styles.mesaDireccion}>📍 {mesa.direccion}</p>
+                      <p className={styles.mesaDireccion}>📍 {getDireccionPorDia(mesa.direccion, municipio.timezone)}</p>
                     </div>
                   </div>
                 ))}

@@ -1,8 +1,27 @@
 /**
- * Retorna true si el municipio solo opera en domingo (no tiene 'Consulado' en el nombre).
+ * Retorna la dirección correcta según el día local.
  */
-export function esSoloDomingo(ciudad) {
-  return !ciudad.toLowerCase().includes('consulado')
+// En src/utils/timeUtils.js
+export function getDireccionPorDia(direccion, timezone) {
+  if (typeof direccion === 'string') return direccion;
+  if (!direccion) return '';
+  
+  try {
+    const ahoraLocal = new Date(
+      new Date().toLocaleString('en-US', { timeZone: timezone })
+    );
+
+    const day = ahoraLocal.getDay();
+    if (day === 0) { // Domingo
+      return direccion.domingo || direccion.sabado || direccion.semana || '';
+    } else if (day === 6) { // Sábado
+      return direccion.sabado || direccion.domingo || direccion.semana || '';
+    } else { // Lunes - Viernes
+      return direccion.semana || direccion.domingo || direccion.sabado || '';
+    }
+  } catch {
+    return direccion.domingo || direccion.sabado || direccion.semana || '';
+  }
 }
 
 /**
@@ -147,7 +166,7 @@ export function getCountryStatus(pais, config = {}, overrides = {}, fechaEleccio
   for (const municipio of pais.municipios) {
     const key = `${pais.codigo}-${municipio.ciudad}`
     const esFM = !!overrides[key]
-    const estado = getMesaStatus(municipio.timezone, config, esSoloDomingo(municipio.ciudad), municipio.fechaInicio, esFM, fechaEleccion)
+    const estado = getMesaStatus(municipio.timezone, config, municipio.soloDomingo, municipio.fechaInicio, esFM, fechaEleccion)
     if (
       prioridad.indexOf(estado) < prioridad.indexOf(mejorEstado)
     ) {
