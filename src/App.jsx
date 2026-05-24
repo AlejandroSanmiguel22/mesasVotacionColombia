@@ -91,19 +91,30 @@ export default function App() {
     setTimeout(() => setTestNotif(null), 6000)
   }
 
-  // Hora actual UTC
-  const [utcTime, setUtcTime] = useState('')
+  // Cuenta regresiva
+  const [countdown, setCountdown] = useState('')
   useEffect(() => {
-    const update = () =>
-      setUtcTime(
-        new Date().toLocaleTimeString('es-CO', {
-          timeZone: 'America/Bogota',
-          hour: '2-digit',
-          minute: '2-digit',
-          second: '2-digit',
-          hour12: true,
-        })
-      )
+    // 31 de mayo de 2026 a las 16:00 Hawaii Time (UTC-10) -> 1 de junio 02:00 UTC
+    const targetDate = new Date('2026-05-31T16:00:00-10:00').getTime()
+
+    const update = () => {
+      const now = new Date().getTime()
+      const diff = targetDate - now
+
+      if (diff <= 0) {
+        setCountdown('Finalizadas')
+      } else {
+        const d = Math.floor(diff / (1000 * 60 * 60 * 24))
+        const h = Math.floor((diff / (1000 * 60 * 60)) % 24).toString().padStart(2, '0')
+        const m = Math.floor((diff / 1000 / 60) % 60).toString().padStart(2, '0')
+        const s = Math.floor((diff / 1000) % 60).toString().padStart(2, '0')
+        if (d > 0) {
+          setCountdown(`${d}d ${h}:${m}:${s}`)
+        } else {
+          setCountdown(`${h}:${m}:${s}`)
+        }
+      }
+    }
     update()
     const id = setInterval(update, 1000)
     return () => clearInterval(id)
@@ -136,8 +147,8 @@ export default function App() {
         <div className={styles.headerRight}>
           <img src={logoCancilleria} alt="Cancillería" className={styles.cancilleriaImg} />
           <div className={styles.clock}>
-            <span className={styles.clockLabel}>Colombia</span>
-            <span className={styles.clockTime}>{utcTime}</span>
+            <span className={styles.clockLabel}>{countdown === 'Finalizadas' ? '' : 'Fin en:'}</span>
+            <span className={styles.clockTime}>{countdown}</span>
           </div>
         </div>
       </header>
