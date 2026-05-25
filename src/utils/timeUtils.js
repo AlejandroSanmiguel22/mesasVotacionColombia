@@ -57,9 +57,17 @@ export function getMesaStatus(timezone, config = {}, soloDomingo = false, fechaI
       if (hoyLocal > eleccion) return 'cerrada'
     }
 
-    // Si solo opera en domingo y hoy no es domingo → cerrada
-    if (soloDomingo && ahoraLocal.getDay() !== 0) {
+    // Las elecciones empiezan el 25 de mayo de 2026
+    const fechaInicioGlobal = new Date('2026-05-25T00:00:00')
+    if (hoyLocal < fechaInicioGlobal) {
       return 'cerrada'
+    }
+
+    // Los adscritos (soloDomingo) solo abren el 31 de mayo (mes 4 en JS)
+    if (soloDomingo) {
+      if (ahoraLocal.getDate() !== 31 || ahoraLocal.getMonth() !== 4) {
+        return 'cerrada'
+      }
     }
 
     // Si tiene fecha de inicio y aún no ha llegado → cerrada
