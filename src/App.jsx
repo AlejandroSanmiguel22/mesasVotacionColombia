@@ -147,7 +147,7 @@ export default function App() {
         <div className={styles.headerRight}>
           <img src={logoCancilleria} alt="Cancillería" className={styles.cancilleriaImg} />
           <div className={styles.clock}>
-            <span className={styles.clockLabel}>{countdown === 'Finalizadas' ? '' : 'Fin en:'}</span>
+            <span className={styles.clockLabel}>{countdown === 'Finalizadas' ? '' : 'Fin de las elecciones:'}</span>
             <span className={styles.clockTime}>{countdown}</span>
           </div>
         </div>
