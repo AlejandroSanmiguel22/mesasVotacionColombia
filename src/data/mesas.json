@@ -1,5 +1,6 @@
 {
-  "fechaEleccion": "2026-05-31",
+  "fechaInicio": "2026-06-15",
+  "fechaEleccion": "2026-06-21",
   "horaApertura": {
     "hora": 8,
     "minuto": 0
@@ -2284,7 +2285,6 @@
         {
           "ciudad": "Hawaii",
           "timezone": "Pacific/Honolulu",
-          "fechaInicio": "2026-03-08",
           "lat": 21.2985,
           "lon": -157.8619,
           "mesas": [

@@ -49,6 +49,7 @@ export default function App() {
       horaCierre: mesasData.horaCierre,
       minutosAvisoApertura: mesasData.minutosAvisoApertura,
       minutosAvisoCierre: mesasData.minutosAvisoCierre,
+      fechaInicio: mesasData.fechaInicio,
     }),
     []
   )
@@ -94,8 +95,8 @@ export default function App() {
   // Cuenta regresiva
   const [countdown, setCountdown] = useState('')
   useEffect(() => {
-    // 31 de mayo de 2026 a las 16:00 Hawaii Time (UTC-10) -> 1 de junio 02:00 UTC
-    const targetDate = new Date('2026-05-31T16:00:00-10:00').getTime()
+    // 21 de junio de 2026 a las 16:00 Hawaii Time (UTC-10)
+    const targetDate = new Date('2026-06-21T16:00:00-10:00').getTime()
 
     const update = () => {
       const now = new Date().getTime()

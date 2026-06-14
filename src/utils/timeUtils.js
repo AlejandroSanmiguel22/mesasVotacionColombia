@@ -57,15 +57,21 @@ export function getMesaStatus(timezone, config = {}, soloDomingo = false, fechaI
       if (hoyLocal > eleccion) return 'cerrada'
     }
 
-    // Las elecciones empiezan el 25 de mayo de 2026
-    const fechaInicioGlobal = new Date('2026-05-25T00:00:00')
-    if (hoyLocal < fechaInicioGlobal) {
+    const fechaInicioGlobal = config.fechaInicio
+      ? new Date(config.fechaInicio + 'T00:00:00')
+      : null
+    if (fechaInicioGlobal && hoyLocal < fechaInicioGlobal) {
       return 'cerrada'
     }
 
-    // Los adscritos (soloDomingo) solo abren el 31 de mayo (mes 4 en JS)
-    if (soloDomingo) {
-      if (ahoraLocal.getDate() !== 31 || ahoraLocal.getMonth() !== 4) {
+    // Los adscritos (soloDomingo) solo abren el día de la elección
+    if (soloDomingo && fechaEleccion) {
+      const [y, m, d] = fechaEleccion.split('-').map(Number)
+      if (
+        ahoraLocal.getFullYear() !== y ||
+        ahoraLocal.getMonth() !== m - 1 ||
+        ahoraLocal.getDate() !== d
+      ) {
         return 'cerrada'
       }
     }
