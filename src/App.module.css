@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   height: 100vh;
+  height: 100dvh;
   width: 100vw;
   background: var(--bg-primary);
   overflow: hidden;
@@ -181,13 +182,47 @@
   }
 }
 
-/* ── SEARCH PANEL ────────────────────────────────────────── */
+/* ── SEARCH ──────────────────────────────────────────────── */
+.headerSearch {
+  display: none;
+  grid-column: 1 / -1;
+  position: relative;
+  z-index: 30;
+}
+
 .searchPanel {
   position: absolute;
   bottom: 5.5rem;
   left: 1.5rem;
   z-index: 20;
   width: 280px;
+  padding-bottom: env(safe-area-inset-bottom, 0);
+}
+
+@media (max-width: 900px) {
+  .headerSearch {
+    display: block;
+    grid-row: 3;
+  }
+
+  .headerSearch .searchBox {
+    padding: 0.45rem 0.75rem;
+    box-shadow: none;
+  }
+
+  .headerSearch .searchResults {
+    position: absolute;
+    top: calc(100% + 0.35rem);
+    left: 0;
+    right: 0;
+    z-index: 50;
+    max-height: min(50dvh, 320px);
+    margin-top: 0;
+  }
+
+  .searchPanel {
+    display: none;
+  }
 }
 
 /* Cuando hay sidebar, reposicionar */
@@ -220,16 +255,12 @@
     -webkit-overflow-scrolling: touch;
     padding-bottom: env(safe-area-inset-bottom, 0);
   }
-
-  .searchPanelHidden {
-    display: none;
-  }
 }
 
 @media (max-width: 640px) {
   .header {
     grid-template-columns: 1fr auto;
-    grid-template-rows: auto auto;
+    grid-template-rows: auto auto auto;
     height: auto;
     min-height: 0;
     padding: 0.45rem 0.65rem 0.4rem;
@@ -250,7 +281,8 @@
   .headerCenter {
     grid-row: 2;
     grid-column: 1 / -1;
-    justify-content: flex-start;
+    justify-content: center;
+    width: 100%;
   }
 
   .cancilleriaImg {
@@ -276,13 +308,6 @@
   .clockLabel {
     font-size: 0.52rem;
   }
-
-  .searchPanel {
-    left: 0.75rem;
-    right: 0.75rem;
-    width: auto;
-    bottom: 1rem;
-  }
 }
 
 @media (max-width: 900px) and (min-width: 641px) {
@@ -291,7 +316,7 @@
     min-height: 56px;
     padding: 0.5rem 0.75rem;
     grid-template-columns: auto 1fr;
-    grid-template-rows: auto auto;
+    grid-template-rows: auto auto auto;
   }
 
   .headerLeft {
@@ -308,7 +333,8 @@
   .headerCenter {
     grid-row: 2;
     grid-column: 1 / -1;
-    justify-content: flex-start;
+    justify-content: center;
+    width: 100%;
   }
 
   .cancilleriaImg {

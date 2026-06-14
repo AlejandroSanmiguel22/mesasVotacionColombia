@@ -160,6 +160,19 @@ export default function App() {
             <span className={styles.clockTime}>{countdown}</span>
           </div>
         </div>
+
+        {!selectedCountry && (
+          <SearchBar
+            search={search}
+            onSearchChange={setSearch}
+            paisesFiltrados={paisesFiltrados}
+            onSelectCountry={(pais) => {
+              setSelectedCountry(pais)
+              setSearch('')
+            }}
+            className={styles.headerSearch}
+          />
+        )}
       </header>
 
       {/* Panel de estado al clicar tarjeta Stats */}
@@ -231,47 +244,59 @@ export default function App() {
         )}
       </main>
 
-      {/* Lista de países (buscador flotante) */}
-      <div className={`${styles.searchPanel} ${selectedCountry ? styles.searchPanelHidden : ''}`}>
-        <div className={styles.searchBox}>
-          <span className={styles.searchIcon}>🔍</span>
-          <input
-            type="text"
-            placeholder="Buscar país o ciudad..."
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
-            className={styles.searchInput}
-          />
-        </div>
-        {search && (
-          <div className={styles.searchResults}>
-            {paisesFiltrados.length === 0 ? (
-              <p className={styles.noResults}>No se encontraron resultados</p>
-            ) : (
-              paisesFiltrados.map((pais) => (
-                <button
-                  key={pais.codigo}
-                  className={styles.searchResultItem}
-                  onClick={() => {
-                    setSelectedCountry(pais)
-                    setSearch('')
-                  }}
-                >
-                  <span>{countryFlag(pais.codigo)}</span>
-                  <span>{pais.nombre}</span>
-                  <span className={styles.resultMesas}>
-                    {pais.municipios.reduce(
-                      (acc, m) => acc + m.mesas.length,
-                      0
-                    )}{' '}
-                    mesas
-                  </span>
-                </button>
-              ))
-            )}
-          </div>
-        )}
+      {/* Buscador flotante (escritorio) */}
+      {!selectedCountry && (
+        <SearchBar
+          search={search}
+          onSearchChange={setSearch}
+          paisesFiltrados={paisesFiltrados}
+          onSelectCountry={(pais) => {
+            setSelectedCountry(pais)
+            setSearch('')
+          }}
+          className={styles.searchPanel}
+        />
+      )}
+    </div>
+  )
+}
+
+function SearchBar({ search, onSearchChange, paisesFiltrados, onSelectCountry, className }) {
+  return (
+    <div className={className}>
+      <div className={styles.searchBox}>
+        <span className={styles.searchIcon}>🔍</span>
+        <input
+          type="search"
+          placeholder="Buscar país o ciudad..."
+          value={search}
+          onChange={(e) => onSearchChange(e.target.value)}
+          className={styles.searchInput}
+          enterKeyHint="search"
+        />
       </div>
+      {search && (
+        <div className={styles.searchResults}>
+          {paisesFiltrados.length === 0 ? (
+            <p className={styles.noResults}>No se encontraron resultados</p>
+          ) : (
+            paisesFiltrados.map((pais) => (
+              <button
+                key={pais.codigo}
+                type="button"
+                className={styles.searchResultItem}
+                onClick={() => onSelectCountry(pais)}
+              >
+                <span>{countryFlag(pais.codigo)}</span>
+                <span>{pais.nombre}</span>
+                <span className={styles.resultMesas}>
+                  {pais.municipios.reduce((acc, m) => acc + m.mesas.length, 0)} mesas
+                </span>
+              </button>
+            ))
+          )}
+        </div>
+      )}
     </div>
   )
 }

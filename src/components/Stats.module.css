@@ -3,6 +3,8 @@
   gap: 0.35rem;
   flex-wrap: nowrap;
   align-items: center;
+  justify-content: center;
+  width: 100%;
   overflow-x: auto;
   scrollbar-width: none;
   -webkit-overflow-scrolling: touch;
@@ -61,7 +63,6 @@
 
 @media (min-width: 900px) {
   .stats {
-    justify-content: center;
     flex-wrap: wrap;
     overflow-x: visible;
   }
