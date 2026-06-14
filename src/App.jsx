@@ -121,6 +121,14 @@ export default function App() {
     return () => clearInterval(id)
   }, [])
 
+  // Bloquear scroll del body cuando el panel está abierto en móvil
+  useEffect(() => {
+    if (!selectedCountry) return
+    const prev = document.body.style.overflow
+    document.body.style.overflow = 'hidden'
+    return () => { document.body.style.overflow = prev }
+  }, [selectedCountry])
+
   return (
     <div className={styles.app}>
       {/* Top Bar */}
@@ -202,22 +210,29 @@ export default function App() {
 
         {/* Panel lateral */}
         {selectedCountry && (
-          <aside className={styles.sidebar}>
-            <CountryPanel
-              pais={selectedCountry}
-              config={config}
-              overrides={fuerzaMayorOverrides}
-              fechaEleccion={mesasData.fechaEleccion}
-              onToggleFuerzaMayor={toggleFuerzaMayor}
-              onClose={() => setSelectedCountry(null)}
-              key={selectedCountry.codigo + tick}
+          <>
+            <div
+              className={styles.sidebarBackdrop}
+              onClick={() => setSelectedCountry(null)}
+              aria-hidden="true"
             />
-          </aside>
+            <aside className={styles.sidebar}>
+              <CountryPanel
+                pais={selectedCountry}
+                config={config}
+                overrides={fuerzaMayorOverrides}
+                fechaEleccion={mesasData.fechaEleccion}
+                onToggleFuerzaMayor={toggleFuerzaMayor}
+                onClose={() => setSelectedCountry(null)}
+                key={selectedCountry.codigo + tick}
+              />
+            </aside>
+          </>
         )}
       </main>
 
       {/* Lista de países (buscador flotante) */}
-      <div className={styles.searchPanel}>
+      <div className={`${styles.searchPanel} ${selectedCountry ? styles.searchPanelHidden : ''}`}>
         <div className={styles.searchBox}>
           <span className={styles.searchIcon}>🔍</span>
           <input

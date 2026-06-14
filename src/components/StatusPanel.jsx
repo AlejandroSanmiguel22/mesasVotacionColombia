@@ -43,6 +43,12 @@ export default function StatusPanel({ estado, paises, config, onClose, onSelectC
 
   return (
     <div className={styles.overlay}>
+      <button
+        type="button"
+        className={styles.backdrop}
+        onClick={onClose}
+        aria-label="Cerrar panel"
+      />
       <div className={styles.panel} ref={panelRef}>
         <div className={styles.header} style={{ borderBottomColor: cfg.colorBorder }}>
           <span className={styles.dot} style={{ background: cfg.color }} />

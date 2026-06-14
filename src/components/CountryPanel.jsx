@@ -56,8 +56,15 @@ export default function CountryPanel({ pais, config, onClose, overrides = {}, on
             </p>
           </div>
         </div>
-        <button className={styles.closeBtn} onClick={onClose}>
-          ✕
+        <button
+          className={styles.closeBtn}
+          onClick={onClose}
+          type="button"
+          aria-label="Volver al mapa"
+        >
+          <span className={styles.closeBtnIcon} aria-hidden="true">←</span>
+          <span className={styles.closeBtnLabel}>Volver</span>
+          <span className={styles.closeBtnX} aria-hidden="true">✕</span>
         </button>
       </div>
 

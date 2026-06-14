@@ -25,18 +25,23 @@ export default function Stats({ paises, config, onSelectEstado, overrides = {}, 
     <div className={styles.stats}>
       {['abierta', 'pronto-cerrar', 'pronto-abrir', 'cerrada', 'fuerza-mayor'].map((estado) => {
         const cfg = STATUS_CONFIG[estado]
+        const count = conteos[estado] || 0
+        if (estado === 'fuerza-mayor' && count === 0) return null
         return (
-          <div
+          <button
             key={estado}
+            type="button"
             className={styles.statCard}
-            style={{ borderColor: cfg.colorBorder, background: cfg.colorBg, cursor: 'pointer' }}
+            style={{ borderColor: cfg.colorBorder, background: cfg.colorBg }}
             onClick={() => onSelectEstado?.(estado)}
+            aria-label={`${cfg.label}: ${count} mesas`}
           >
+            <span className={styles.statDot} style={{ background: cfg.color }} />
             <span className={styles.statNum} style={{ color: cfg.color }}>
-              {conteos[estado] || 0}
+              {count}
             </span>
             <span className={styles.statLabel}>{cfg.label}</span>
-          </div>
+          </button>
         )
       })}
     </div>
